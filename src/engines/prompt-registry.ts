@@ -1,4 +1,4 @@
-// PRD §8.2 registry — server-side, versioned.
+// server-side, versioned.
 export type PromptKey =
   | 'narrative' | 'idp' | 'interview' | 'evalnotes' | 'skills'
   | 'talent' | 'scenario' | 'sentiment' | 'letter' | 'policy' | 'career' | 'copilot';

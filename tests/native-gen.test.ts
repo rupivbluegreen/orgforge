@@ -11,7 +11,7 @@ const NOW = new Date('2026-09-22T00:00:00.000Z');
 const [mariam] = seedDepartmentPeople('Support Functions', 'Risk & Control Functions', 'Legal', 3, 1, NOW);
 const mariamCtx = buildPersonContext(mariam, 'Support Functions', 'Risk & Control Functions', 'Legal', NOW);
 
-describe('draftPerfNarrative (PRD §8.2 narrative)', () => {
+describe('draftPerfNarrative', () => {
   it('picks the rating>=4 branch text and includes SFIA gaps and compa-ratio', () => {
     const text = draftPerfNarrative(mariamCtx);
     expect(text).toContain('PERFORMANCE COMMENTARY — Mariam Khalifa (EMP-10001)');
@@ -39,7 +39,7 @@ describe('draftPerfNarrative (PRD §8.2 narrative)', () => {
   });
 });
 
-describe('draftIdp (PRD §8.2 idp)', () => {
+describe('draftIdp', () => {
   it('threads the assigned plan fields and gap-driven tailoring', () => {
     const text = draftIdp(mariamCtx);
     expect(text).toContain('INDIVIDUAL DEVELOPMENT PLAN — Mariam Khalifa (EMP-10001) · Team Manager, M3');
@@ -57,7 +57,7 @@ describe('draftIdp (PRD §8.2 idp)', () => {
   });
 });
 
-describe('draftInterviewKit (PRD §8.2 interview)', () => {
+describe('draftInterviewKit', () => {
   it('numbers competency questions per skill plus 2 fixed questions', () => {
     const text = draftInterviewKit({
       job: 'Head of Legal', grade: 'M2', department: 'Legal',
@@ -72,7 +72,7 @@ describe('draftInterviewKit (PRD §8.2 interview)', () => {
   });
 });
 
-describe('draftEvalNotes (PRD §8.2 evalnotes)', () => {
+describe('draftEvalNotes', () => {
   it('matches the independently-verified pos/neg/score for a mixed-signal note', () => {
     const notes = 'Strong quantified delivery with a clear structured approach. However some areas were vague and the candidate struggled under pressure.';
     const text = draftEvalNotes({
@@ -88,7 +88,7 @@ describe('draftEvalNotes (PRD §8.2 evalnotes)', () => {
   });
 });
 
-describe('inferSkills (PRD §8.2 skills)', () => {
+describe('inferSkills', () => {
   it('matches the independently-verified 8-hit, seniority-5 case', () => {
     const text = inferSkills(
       'Senior manager with 10 years experience. Led credit risk assessment and portfolio risk analysis using data analytics dashboards. Delivered process improvement automation initiatives. Managed stakeholder relationship and team mentoring. Delivered project outcomes. Compliance and regulatory oversight. Strategic planning lead.'
@@ -111,7 +111,7 @@ describe('inferSkills (PRD §8.2 skills)', () => {
   });
 });
 
-describe('draftTalentTalkingPoints (PRD §8.2 talent)', () => {
+describe('draftTalentTalkingPoints', () => {
   it('lists notables with flight-risk callout', () => {
     const text = draftTalentTalkingPoints({
       dist: '9-box distribution summary',
@@ -126,7 +126,7 @@ describe('draftTalentTalkingPoints (PRD §8.2 talent)', () => {
   });
 });
 
-describe('draftScenarioNarrative (PRD §8.2 scenario)', () => {
+describe('draftScenarioNarrative', () => {
   it('cost-down + healthy span + succession gap present', () => {
     const text = draftScenarioNarrative({ headline: 'Merge IT and Ops', baseCtc: 10000000, curCtc: 9500000, hc: 500, depts: 40, span: 7, succGaps: 2, moves: 3 });
     expect(text).toContain('COST — Annual CTC moves from AED 10.0M to AED 9.5M (−AED 500K)');
@@ -143,7 +143,7 @@ describe('draftScenarioNarrative (PRD §8.2 scenario)', () => {
   });
 });
 
-describe('analyzeSentiment (PRD §8.2 sentiment)', () => {
+describe('analyzeSentiment', () => {
   it('matches the independently-verified themes and per-division averages', () => {
     const text = analyzeSentiment([
       { div: 'Retail Banking Group', text: 'Workload is heavy and management is micromanaging us, feels unfair and I want to quit.' },
@@ -158,7 +158,7 @@ describe('analyzeSentiment (PRD §8.2 sentiment)', () => {
   });
 });
 
-describe('draftLetter (PRD §8.2 letter)', () => {
+describe('draftLetter', () => {
   it('Offer Letter includes salary, division, department and UAE law reference', () => {
     const text = draftLetter(mariamCtx, 'Offer Letter', NOW);
     expect(text).toContain('B-WORK BANK (UAE) — HUMAN RESOURCES');
@@ -177,7 +177,7 @@ describe('draftLetter (PRD §8.2 letter)', () => {
   });
 });
 
-describe('answerPolicyQuestion (PRD §8.2 policy)', () => {
+describe('answerPolicyQuestion', () => {
   it('routes each recognized topic to its own grounded answer', () => {
     expect(answerPolicyQuestion('What is my EOSB gratuity?')).toContain('Art. 51');
     expect(answerPolicyQuestion('How much annual leave do I get?')).toContain('Art. 29');
@@ -193,7 +193,7 @@ describe('answerPolicyQuestion (PRD §8.2 policy)', () => {
   });
 });
 
-describe('draftCareerAdvice (PRD §8.2 career)', () => {
+describe('draftCareerAdvice', () => {
   it('computes the next grade, band midpoint move, and SFIA gaps to close', () => {
     const text = draftCareerAdvice(mariam, 'Support Functions', 'Risk & Control Functions', 'Legal');
     expect(text).toContain('Career path for Mariam Khalifa (M3 · Team Manager)');

@@ -17,8 +17,8 @@ function modelWithSpan(subdivisionName: string, divisionName: string, count: num
   };
 }
 
-describe('assessDepartmentMove — PRD §5.6 department rules, AC-1/AC-2/AC-3', () => {
-  it('AC-1: Legal (Risk & Control Functions) into Front Office & Distribution → HUMAN, cites control-function independence, no "undefined" text', () => {
+describe('assessDepartmentMove — department rules', () => {
+  it('Legal (Risk & Control Functions) into Front Office & Distribution → HUMAN, cites control-function independence, no "undefined" text', () => {
     const model = modelWithSpan('Front Office & Distribution', 'Retail Banking Group', 6);
     const mv: DepartmentMoveInput = {
       entityType: 'department', entity: 'Legal',
@@ -32,7 +32,7 @@ describe('assessDepartmentMove — PRD §5.6 department rules, AC-1/AC-2/AC-3', 
     expect(out.reasons.join(' ')).not.toContain('undefined');
   });
 
-  it('AC-2: receiving sub-division already at 10 departments → INVALID span-of-control breach', () => {
+  it('receiving sub-division already at 10 departments → INVALID span-of-control breach', () => {
     const model = modelWithSpan('Operations', 'Operations & Technology', 10);
     const mv: DepartmentMoveInput = {
       entityType: 'department', entity: 'Central Operations',
@@ -44,7 +44,7 @@ describe('assessDepartmentMove — PRD §5.6 department rules, AC-1/AC-2/AC-3', 
     expect(out.reasons.some((r) => r.includes('Span-of-control breach'))).toBe(true);
   });
 
-  it('AC-3: one-grade Hay drift (M3→P4) → HUMAN, re-banding language', () => {
+  it('one-grade Hay drift (M3→P4) → HUMAN, re-banding language', () => {
     const model = modelWithSpan('Business Support', 'Support Functions', 5);
     const mv: DepartmentMoveInput = {
       entityType: 'department', entity: 'Strategy & Transformation',

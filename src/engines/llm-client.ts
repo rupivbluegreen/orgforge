@@ -1,4 +1,4 @@
-// PRD §8.6: credentials stay server-side
+// credentials stay server-side
 export interface LlmCompletionParams {
   model: string;
   maxTokens: number;

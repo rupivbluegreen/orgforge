@@ -1,4 +1,4 @@
-// In-memory ledger (PRD §5.10, §7.3). No DOM.
+// In-memory ledger. No DOM.
 export type LedgerKind = 'read' | 'write' | 'calc' | 'ai';
 
 export interface LedgerEntry {

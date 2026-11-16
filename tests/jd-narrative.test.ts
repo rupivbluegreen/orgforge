@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { draftJdNarrative } from '../src/engines/jd-narrative';
 import type { JdNarrativeInput } from '../src/engines/jd-narrative';
 
-describe('draftJdNarrative — Head of Legal (real dept, hand-verified against PRD §5.2/§5.5 chain)', () => {
+describe('draftJdNarrative — Head of Legal (real dept)', () => {
   const input: JdNarrativeInput = {
     role: { label: 'Head of Legal', dept: 'Legal', div: 'Support Functions', sub: 'Risk & Control Functions' },
     isHead: true,

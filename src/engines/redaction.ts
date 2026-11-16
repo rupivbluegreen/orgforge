@@ -1,4 +1,4 @@
-// PRD §8.5: strip named fields at any depth
+// strip named fields at any depth
 export function redactContext<T>(context: T, fields: string[]): T {
   const fieldSet = new Set(fields);
   const strip = (val: unknown): unknown => {

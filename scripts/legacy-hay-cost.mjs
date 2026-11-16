@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Reproduces Build 6's UN-FIXED Hay+Cost
+// Reproduces the legacy UN-FIXED Hay+Cost
 // output (STREAMS 'S' bug, not corrected).
 // Frozen "before" fixture — don't fix this.
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -14,7 +14,7 @@ const HAY_STEPS = [50, 57, 66, 76, 87, 100, 115, 132, 152, 175, 200, 230, 264, 3
 const stepAt = (i) => HAY_STEPS[Math.max(0, Math.min(HAY_STEPS.length - 1, i))];
 const nearestStep = (v) => HAY_STEPS.reduce((a, b) => (Math.abs(b - v) < Math.abs(a - v) ? b : a));
 
-// UN-FIXED as shipped in Build 6.
+// UN-FIXED as originally shipped.
 const STREAMS_LEGACY = {
   'Front Office & Distribution': { psEnv: 'E', impact: 'P', psBase: 0.38 },
   'Risk & Control Functions': { psEnv: 'E', impact: 'S', psBase: 0.38 },

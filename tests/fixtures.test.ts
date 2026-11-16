@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import dataset from '../fixtures/embedded-dataset.json';
 
-describe('embedded dataset fixture (PRD Appendix C)', () => {
+describe('embedded dataset fixture', () => {
   it('has 43 departments', () => {
     expect(dataset).toHaveLength(43);
   });
@@ -16,7 +16,7 @@ describe('embedded dataset fixture (PRD Appendix C)', () => {
     });
   });
 
-  it('totals match the prototype\'s actual shipped numbers (not the PRD Appendix C prose, which is stale on headcount)', () => {
+  it('totals match the prototype\'s actual shipped numbers', () => {
     const hc = dataset.reduce((a: number, r: any) => a + r.hc, 0);
     const base = dataset.reduce((a: number, r: any) => a + r.base, 0);
     expect(hc).toBe(4200);

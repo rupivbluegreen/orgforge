@@ -4,7 +4,7 @@ import type { SfiaDeficitEntry } from './sfia-gap';
 import { trainCost } from './sfia-catalogue';
 import type { Person } from './person';
 
-// PRD §5.10 9-box: perf x SFIA-surplus potential
+// perf x SFIA-surplus potential
 export type PerfBucket = 0 | 1 | 2;
 export type PotentialBucket = 0 | 1 | 2;
 
@@ -61,7 +61,7 @@ export function buildNineBox(records: NineBoxRecord[]): NineBoxCell[] {
   return cells;
 }
 
-// PRD §5.10 succession: ranked bench
+// ranked bench
 export interface CriticalRole {
   deptName: string;
   divName: string;
@@ -100,7 +100,7 @@ export function successionBench(role: CriticalRole, candidates: SuccessionCandid
     .slice(0, topN);
 }
 
-// PRD §5.10 mobility marketplace
+// Mobility marketplace
 export interface MobilityTarget {
   deptName: string;
   divName: string;
@@ -130,7 +130,7 @@ export function modelMobility(person: Person, fromDeptName: string, target: Mobi
   return { fromDept: fromDeptName, toDept: target.deptName, readiness, bridgeCost, gapPts: def.pts, months, transitionLabel, viableDirectMove, deficits: def.det };
 }
 
-// PRD §5.10 budget, priced per SFIA level closed
+// Budget, priced per SFIA level closed
 export interface LearningBudgetRecord {
   person: Person;
   deptName: string;

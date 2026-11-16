@@ -3,7 +3,7 @@ import { Ledger } from '../src/engines/ledger';
 
 const NOW = new Date('2026-09-22T14:30:00.000Z');
 
-describe('Ledger (PRD §5.10, §7.3 audit trail)', () => {
+describe('Ledger', () => {
   it('logs an entry with timestamp, kind, op and message', () => {
     const ledger = new Ledger();
     const entry = ledger.log('write', 'ORA-WRITE', 'org_change department: Legal → Retail Banking Group', NOW);

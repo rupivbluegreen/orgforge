@@ -6,7 +6,7 @@ import {
 import type { PerfRating } from '../src/engines/perf';
 import { PERF_PLANS, PERF_MODULES } from '../src/engines/perf-plans';
 
-describe('PERF_SCALE / PERF_GUIDE (PRD §5.9)', () => {
+describe('PERF_SCALE / PERF_GUIDE', () => {
   it('has 5 rating entries with the correct calibration guideline %', () => {
     expect(PERF_SCALE).toHaveLength(5);
     expect(PERF_GUIDE).toEqual({ 1: 5, 2: 15, 3: 50, 4: 22, 5: 8 });
@@ -34,7 +34,7 @@ describe('perfLabel / perfTrack / perfStream', () => {
   });
 });
 
-describe('perfPlanId (PRD §5.9, FR-PRF-04)', () => {
+describe('perfPlanId', () => {
   it('rating 1 always routes to PIP-01, rating 5 to STR-01', () => {
     expect(perfPlanId(1, 'M3')).toBe('PIP-01');
     expect(perfPlanId(5, 'C1')).toBe('STR-01');
@@ -60,7 +60,7 @@ describe('perfPlanId (PRD §5.9, FR-PRF-04)', () => {
   });
 });
 
-describe('computeCalibration (PRD §5.9 FR-PRF-01/02)', () => {
+describe('computeCalibration', () => {
   it('matches a hand-computed 8-person distribution exactly', () => {
     const ratings: PerfRating[] = [1, 2, 2, 3, 3, 3, 4, 5];
     const cal = computeCalibration(ratings);
@@ -84,7 +84,7 @@ describe('computeCalibration (PRD §5.9 FR-PRF-01/02)', () => {
   });
 });
 
-describe('applyRatingChange (PRD §5.9 FR-PRF-05)', () => {
+describe('applyRatingChange', () => {
   it('recomputes plan id and track for the new rating', () => {
     expect(applyRatingChange(3, 4, 'M2')).toEqual({
       previousRating: 3, newRating: 4, planId: 'MGR-4-5', track: 'Dev plan 4 → 5',
@@ -97,7 +97,7 @@ describe('applyRatingChange (PRD §5.9 FR-PRF-05)', () => {
   });
 });
 
-describe('PERF_MODULES (PRD FR-PRF-06 static roadmap card)', () => {
+describe('PERF_MODULES', () => {
   it('has 10 modules with priorities', () => {
     expect(PERF_MODULES).toHaveLength(10);
     expect(PERF_MODULES.every((m) => ['P1', 'P2', 'P3'].includes(m.priority))).toBe(true);

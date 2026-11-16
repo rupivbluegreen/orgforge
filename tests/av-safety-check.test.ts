@@ -4,7 +4,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { findEvalViolations } from '../src/engines/av-safety-check';
 
-describe('findEvalViolations (PRD §9 AV NFR)', () => {
+describe('findEvalViolations', () => {
   it('returns empty for a clean directory', () => {
     const dir = mkdtempSync(join(tmpdir(), 'av-safety-clean-'));
     try {

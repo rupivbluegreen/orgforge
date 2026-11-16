@@ -12,7 +12,7 @@ import type { DepartmentInput, OrgModel } from '../src/engines/types';
 const NOW = new Date('2026-09-22T00:00:00.000Z');
 const [mariam] = seedDepartmentPeople('Support Functions', 'Risk & Control Functions', 'Legal', 3, 1, NOW);
 
-describe('classifyIntent (PRD §8.3 native intent router)', () => {
+describe('classifyIntent', () => {
   it('routes each phrasing to the right intent, in shipped priority order', () => {
     expect(classifyIntent('Why was this move flagged?')).toBe('why-invalid');
     expect(classifyIntent('Who does this person report to?')).toBe('reporting-line');
@@ -57,7 +57,7 @@ describe('formatReportingLine', () => {
   });
 });
 
-describe('draftGapLearningPath (PRD §8.3)', () => {
+describe('draftGapLearningPath', () => {
   it('matches Mariam\'s known SFIA gaps exactly', () => {
     const text = draftGapLearningPath(mariam, 'Support Functions', 'Risk & Control Functions', 'Legal');
     expect(text).toBe(
@@ -80,7 +80,7 @@ describe('draftGapLearningPath (PRD §8.3)', () => {
   });
 });
 
-describe('draftHayReevaluation (PRD §8.3)', () => {
+describe('draftHayReevaluation', () => {
   const legalDept: DepartmentInput = { department: 'Legal', hc: 41, base: 7562000, _division: 'Support Functions', _subdivision: 'Risk & Control Functions' };
   const model: OrgModel = {
     divisions: [{
@@ -118,7 +118,7 @@ describe('draftHayReevaluation (PRD §8.3)', () => {
   // E1 unreachable: evaluate() caps < 1850pt
 });
 
-describe('findUnits / draftScenario (PRD §8.3, AC-9)', () => {
+describe('findUnits / draftScenario', () => {
   const units: UnitRef[] = [
     { name: 'Legal', type: 'department', hc: 41, base: 7562000 },
     { name: 'Finance & Accounting', type: 'department', hc: 45, base: 7639000 },
@@ -129,7 +129,7 @@ describe('findUnits / draftScenario (PRD §8.3, AC-9)', () => {
     expect(findUnits('nothing relevant here', units)).toEqual([]);
   });
 
-  it('drafts a merger scenario with exact cost/headcount math (AC-9\'s own shape)', () => {
+  it('drafts a merger scenario with exact cost/headcount math', () => {
     const text = draftScenario('Create a merger scenario for Legal and Finance with 10% reduction', units, 1000);
     expect(text).toContain('SCENARIO DRAFT — MERGER');
     expect(text).toContain('Units in scope: Legal (department) + Finance & Accounting (department) · combined 86 HC · base AED 15.2M.');
@@ -150,7 +150,7 @@ describe('findUnits / draftScenario (PRD §8.3, AC-9)', () => {
   });
 });
 
-describe('draftOkrs / draftManagerCoachingScript (PRD §8.3)', () => {
+describe('draftOkrs / draftManagerCoachingScript', () => {
   it('OKRs thread the top-2 SFIA gaps and the next-rating plan id', () => {
     const text = draftOkrs(mariam, 'Legal', 'Support Functions', 'Risk & Control Functions');
     expect(text).toContain('OKRs — Mariam Khalifa (Team Manager, rating 4) · next cycle');
@@ -173,7 +173,7 @@ describe('draftOkrs / draftManagerCoachingScript (PRD §8.3)', () => {
   });
 });
 
-describe('computeEquitySnapshot / formatEquitySnapshot (PRD §8.3)', () => {
+describe('computeEquitySnapshot / formatEquitySnapshot', () => {
   it('matches a hand-computed 3-person snapshot exactly', () => {
     const people: Person[] = [
       { id: 'p1', name: 'Under', job: 'x', grade: 'M2', skills: {}, behaviours: {}, sal: 350000, allow: 0, startDate: '2020-01-01', nationality: 'Expat', perf: 3 },

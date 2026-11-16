@@ -36,7 +36,7 @@ export interface GeneratorContext {
   eosb_today_AED: number;
 }
 
-// PRD 8.3: shared person-scoped generator context
+// shared person-scoped generator context
 export function buildPersonContext(
   person: Person,
   divName: string,

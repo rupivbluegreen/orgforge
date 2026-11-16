@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// PRD §9: offline zip, README, SHA256SUMS
+// offline zip, README, SHA256SUMS
 import { createHash } from 'node:crypto';
 import { readFileSync, writeFileSync, readdirSync, statSync, mkdirSync } from 'node:fs';
 import { join, relative } from 'node:path';
@@ -56,7 +56,7 @@ Commit: ${gitCommit()}
 This is a compiled, offline-safe build of the core calculation
 engines (Hay, Cost, Governance, SFIA, EOSB, Rewards, Rationale,
 JD, Ledger, Spine, RBAC, LLM gateway) from the Orgforge
-PRD, ported from the Build 6 prototype.
+ported from the original prototype.
 
 ## Integrity
 

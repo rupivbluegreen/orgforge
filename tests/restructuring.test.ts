@@ -44,7 +44,7 @@ describe('selectVictims', () => {
   });
 });
 
-describe('modelRestructuring (PRD §5.8, FR-UAE-04)', () => {
+describe('modelRestructuring', () => {
   it('finds the cheapest eligible redeployment and recommends REDEPLOY when cheaper than redundancy', () => {
     const p = person();
     const model = modelRestructuring(
@@ -85,7 +85,7 @@ describe('modelRestructuring (PRD §5.8, FR-UAE-04)', () => {
   });
 });
 
-describe('applyRestructuring (PRD §5.8 execute, AC-11)', () => {
+describe('applyRestructuring', () => {
   it('delete signals full department removal, no field math needed', () => {
     expect(applyRestructuring({ hc: 41, base: 7562000, approvedHC: 45, people: [] }, 'delete'))
       .toEqual({ type: 'delete' });

@@ -30,7 +30,7 @@ const model = buildModel();
 const findDept = (name: string): DepartmentInput =>
   model.divisions.flatMap((d) => d.subdivisions.flatMap((s) => s.departments)).find((d) => d.department === name)!;
 
-describe('HayEngine.evaluate — STREAMS fix (PRD §5.2)', () => {
+describe('HayEngine.evaluate — STREAMS fix', () => {
   it('Legal (Risk & Control Functions): ACC drops 230→175, total 865→810, grade stays M2', () => {
     const hay = HayEngine.evaluate(findDept('Legal'), model);
     expect(hay.kh.pts).toBe(460);

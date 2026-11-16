@@ -9,7 +9,7 @@ const personA: SfiaPerson = {
   skills: { RSKM: 5, GOVN: 3, AMLC: 5, DAAN: 4, AUDT: 2, PEDP: 6 },
 };
 
-describe('gapStats (PRD §5.5 gap/surplus aggregation)', () => {
+describe('gapStats', () => {
   it('two identical incumbents at Legal: 4/12 skills short, 67% ready', () => {
     const stats = gapStats([personA, personA], 'Support Functions', 'Risk & Control Functions', 'Legal');
     expect(stats.reqCnt).toBe(12);
@@ -25,7 +25,7 @@ describe('gapStats (PRD §5.5 gap/surplus aggregation)', () => {
   });
 });
 
-describe('sfiaSurplus / sfiaDeficit (PRD §5.5)', () => {
+describe('sfiaSurplus / sfiaDeficit', () => {
   it('sfiaSurplus sums held-over-required across the profile', () => {
     // PEDP: held 6, required 4 -> surplus 2. All others <= required.
     expect(sfiaSurplus(personA, 'Support Functions', 'Risk & Control Functions', 'Legal')).toBe(2);

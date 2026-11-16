@@ -1,8 +1,8 @@
 import { describe, it, expect } from 'vitest';
 import { STREAMS, streamOf } from '../src/engines/streams';
 
-describe('STREAMS classification (PRD §5.2, fixed)', () => {
-  it('matches the PRD taxonomy exactly for all 5 named streams', () => {
+describe('STREAMS classification', () => {
+  it('matches the taxonomy exactly for all 5 named streams', () => {
     expect(STREAMS['Front Office & Distribution'].impact).toBe('P');
     expect(STREAMS['Risk & Control Functions'].impact).toBe('R');
     expect(STREAMS['Technology & Digital'].impact).toBe('C');

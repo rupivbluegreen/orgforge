@@ -10,7 +10,7 @@ export interface RealSpineConfig {
   bearerToken: string;
 }
 
-// Paths provisional; PRD §14.3 leaves REST open
+// Paths provisional; REST contract still open
 const PATHS = {
   orgSnapshot: '/org-snapshot',
   orgChanges: '/org-changes',
@@ -21,7 +21,7 @@ const PATHS = {
   employeeSkills: (id: string) => `/employees/${encodeURIComponent(id)}/skills`,
 };
 
-// PRD §7.1: real ORDS, a Mock drop-in
+// real ORDS, a Mock drop-in
 export class RealOracleSpine implements SpineAPI {
   constructor(private readonly config: RealSpineConfig) {}
 

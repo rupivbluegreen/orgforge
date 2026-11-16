@@ -6,7 +6,7 @@ import {
   trainCost,
 } from '../src/engines/sfia-catalogue';
 
-describe('SFIA catalogue (PRD §5.5)', () => {
+describe('SFIA catalogue', () => {
   it('seeds 47 skills and 8 behaviours', () => {
     expect(Object.keys(SFIA.skills)).toHaveLength(47);
     expect(Object.keys(SFIA.behaviours)).toHaveLength(8);

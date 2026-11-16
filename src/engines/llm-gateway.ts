@@ -21,7 +21,7 @@ export interface LlmGatewayConfig {
   redactFields: string[];
 }
 
-// PRD §8.6: rate limit, redact, audit, fallback
+// rate limit, redact, audit, fallback
 export class LlmGateway {
   constructor(
     private readonly client: LlmClient,

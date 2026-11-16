@@ -1,4 +1,4 @@
-// PRD §2 personas + the 4 named RBAC dimensions.
+// Personas + the 4 named RBAC dimensions.
 export type Persona =
   | 'OrgDesignLead'
   | 'RewardsManager'
@@ -105,7 +105,7 @@ export function canCommitScenario(
   return canProposeScenarioCommit(proposer.persona) && canApproveScenarioCommit(approver.persona);
 }
 
-// PRD §8.4: employee sees own record only.
+// employee sees own record only.
 export function canAccessEmployeeRecord(
   viewer: { persona: Persona; userId: string },
   targetUserId: string

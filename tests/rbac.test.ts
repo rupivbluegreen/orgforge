@@ -12,7 +12,7 @@ import {
   canAccessEmployeeRecord,
 } from '../src/engines/rbac';
 
-describe('PERSONAS (PRD §2 table)', () => {
+describe('PERSONAS', () => {
   it('defines all 8 personas with a module list and permissions text', () => {
     expect(Object.keys(PERSONAS)).toHaveLength(8);
     expect(PERSONAS.RewardsManager.primaryModules).toEqual(['06', '03']);
@@ -96,7 +96,7 @@ describe('(d) scenario commit — maker-checker', () => {
   });
 });
 
-describe('canAccessEmployeeRecord (PRD §8.4 own-record scoping)', () => {
+describe('canAccessEmployeeRecord', () => {
   it('Employee persona can only access their own record', () => {
     expect(canAccessEmployeeRecord({ persona: 'Employee', userId: 'e1' }, 'e1')).toBe(true);
     expect(canAccessEmployeeRecord({ persona: 'Employee', userId: 'e1' }, 'e2')).toBe(false);

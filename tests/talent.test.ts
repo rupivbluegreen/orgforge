@@ -32,7 +32,7 @@ describe('perfBucket / potentialBucket', () => {
   });
 });
 
-describe('buildNineBox (PRD §5.10)', () => {
+describe('buildNineBox', () => {
   it('places a STAR (high perf, high surplus) and an Underperformer (low perf, no surplus) correctly', () => {
     const star = person({ id: 'star', perf: 5, skills: { RSKM: 7, GOVN: 7, AMLC: 7, DAAN: 7, AUDT: 7, PEDP: 7 } });
     const under = person({ id: 'under', perf: 1, skills: {} });
@@ -54,7 +54,7 @@ describe('buildNineBox (PRD §5.10)', () => {
   });
 });
 
-describe('identifyCriticalRoles / successionBench (PRD §5.10)', () => {
+describe('identifyCriticalRoles / successionBench', () => {
   it('ranks roles by Hay total, takes topN', () => {
     const roles: CriticalRole[] = [
       { deptName: 'Legal', divName: 'x', subdivisionName: 'y', hayTotal: 810 },
@@ -79,7 +79,7 @@ describe('identifyCriticalRoles / successionBench (PRD §5.10)', () => {
   });
 });
 
-describe('modelMobility (PRD §5.10)', () => {
+describe('modelMobility', () => {
   const complianceAndAml = { deptName: 'Compliance & AML', divName: 'Support Functions', subdivisionName: 'Risk & Control Functions' };
 
   it('returns null when target equals current department', () => {
@@ -113,7 +113,7 @@ describe('modelMobility (PRD §5.10)', () => {
   });
 });
 
-describe('learningBudgetByDivision (PRD §5.10)', () => {
+describe('learningBudgetByDivision', () => {
   it('aggregates cost/gapPts per division, sorted by cost, using own-grade profile', () => {
     const p1 = person({ id: 'p1', skills: {} }); // 105,500 vs Legal's own M2 profile
     const records: LearningBudgetRecord[] = [{ person: p1, ...LEGAL }];

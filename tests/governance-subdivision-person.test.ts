@@ -14,7 +14,7 @@ function modelWithSubdivisionCount(divisionName: string, count: number): OrgMode
   };
 }
 
-describe('assessSubdivisionMove — PRD §5.6 division span rule', () => {
+describe('assessSubdivisionMove — division span rule', () => {
   it('division already at 7 sub-divisions → INVALID division span breach', () => {
     const model = modelWithSubdivisionCount('Support Functions', 7);
     const mv: SubDivisionMoveInput = { entityType: 'subdivision', to: { division: 'Support Functions' } };
@@ -32,10 +32,10 @@ describe('assessSubdivisionMove — PRD §5.6 division span rule', () => {
   });
 });
 
-describe('assessPersonMove — PRD §5.6 dual-leadership rule', () => {
-  // Ported as shipped in Build 6: the code checks levelOf(grade) >= 7,
-  // which (per GRADE_LEVEL) only E1 satisfies — narrower than the PRD's
-  // prose ("two M1+/E-grade leaders"). PRD Appendix D: prototype governs
+describe('assessPersonMove — dual-leadership rule', () => {
+  // Ported as originally shipped: the code checks levelOf(grade) >= 7,
+  // which (per GRADE_LEVEL) only E1 satisfies — narrower than the written
+  // rule ("two M1+/E-grade leaders"). Prototype governs
   // behaviour for Phase 1, so this is ported as-is, not "corrected".
   it('two E1s land in the same department → HUMAN, dual-leadership clash', () => {
     const mv: PersonMoveInput = {
@@ -48,7 +48,7 @@ describe('assessPersonMove — PRD §5.6 dual-leadership rule', () => {
     expect(out.reasons.some((r) => r.includes('clarify who holds the mandate'))).toBe(true);
   });
 
-  it('one M1 and one E1 in the same department stays VALID (PRD prose says M1+, code checks level ≥7)', () => {
+  it('one M1 and one E1 in the same department stays VALID', () => {
     const mv: PersonMoveInput = {
       entityType: 'person',
       toDepartmentName: 'Treasury Sales',

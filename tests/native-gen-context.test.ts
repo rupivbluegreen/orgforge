@@ -5,7 +5,7 @@ import { buildPersonContext } from '../src/engines/native-gen-context';
 const NOW = new Date('2026-09-22T00:00:00.000Z');
 const [mariam] = seedDepartmentPeople('Support Functions', 'Risk & Control Functions', 'Legal', 3, 1, NOW);
 
-describe('buildPersonContext (PRD §8.3 AI.ctxPerson)', () => {
+describe('buildPersonContext', () => {
   it('assembles the full context for Mariam (M3, Legal) exactly', () => {
     const ctx = buildPersonContext(mariam, 'Support Functions', 'Risk & Control Functions', 'Legal', NOW);
     expect(ctx).toEqual({

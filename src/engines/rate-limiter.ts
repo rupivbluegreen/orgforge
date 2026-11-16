@@ -1,4 +1,4 @@
-// PRD §8.6: per-user quota, fixed window
+// per-user quota, fixed window
 export interface RateLimitConfig {
   maxRequests: number;
   windowMs: number;

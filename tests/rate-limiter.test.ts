@@ -4,7 +4,7 @@ import { RateLimiter } from '../src/engines/rate-limiter';
 const T0 = new Date('2026-09-22T14:30:00.000Z');
 const addMs = (d: Date, ms: number) => new Date(d.getTime() + ms);
 
-describe('RateLimiter (PRD §8.6 per-user rate limits/quotas)', () => {
+describe('RateLimiter', () => {
   it('allows up to maxRequests within the window, then blocks', () => {
     const rl = new RateLimiter({ maxRequests: 2, windowMs: 60000 });
     expect(rl.checkAndConsume('u1', T0)).toBe(true);

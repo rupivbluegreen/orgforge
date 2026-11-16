@@ -15,7 +15,7 @@ const NOW = new Date('2026-09-22T00:00:00.000Z');
 const [mariam, rohan, huda] = seedDepartmentPeople('Support Functions', 'Risk & Control Functions', 'Legal', 3, 1, NOW);
 const people = [mariam, rohan, huda];
 
-describe('fitPayLine / findOutliers (PRD §5.7 pay-line regression)', () => {
+describe('fitPayLine / findOutliers', () => {
   it('OLS fit matches the prototype exactly for the 3 seeded Legal incumbents', () => {
     const fit = fitPayLine(people);
     expect(fit.slope).toBeCloseTo(411.24625991934437, 6);
@@ -31,7 +31,7 @@ describe('fitPayLine / findOutliers (PRD §5.7 pay-line regression)', () => {
   });
 });
 
-describe('gradeBandTable (PRD §5.7 grade band table)', () => {
+describe('gradeBandTable', () => {
   it('one row per grade, sorted by Hay midpoint, matches the prototype', () => {
     const fit = fitPayLine(people);
     const rows = gradeBandTable(people, fit);
@@ -43,7 +43,7 @@ describe('gradeBandTable (PRD §5.7 grade band table)', () => {
   });
 });
 
-describe('bucketOf / equityHeatMap (PRD §5.7 equity heat map)', () => {
+describe('bucketOf / equityHeatMap', () => {
   it('buckets grades into C / P / M-E by first letter', () => {
     expect(bucketOf('C2')).toBe('C');
     expect(bucketOf('P4')).toBe('P');
@@ -63,7 +63,7 @@ describe('bucketOf / equityHeatMap (PRD §5.7 equity heat map)', () => {
   });
 });
 
-describe('meritTertile / projectMerit (PRD §5.7 merit matrix)', () => {
+describe('meritTertile / projectMerit', () => {
   it('all 3 seeded Legal incumbents land in the mid CR tertile', () => {
     people.forEach((p) => expect(meritTertile(p)).toBe(1));
   });

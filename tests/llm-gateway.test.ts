@@ -17,7 +17,7 @@ function makeGateway(client: LlmClient, opts?: { maxRequests?: number; redactFie
   return { gateway, ledger, rateLimiter };
 }
 
-describe('LlmGateway (PRD §8.6 server-side gateway)', () => {
+describe('LlmGateway', () => {
   it('success: calls the client, logs LLM-CALL, returns llm engine result', async () => {
     const complete = vi.fn(async () => 'Drafted narrative text.');
     const { gateway, ledger } = makeGateway({ complete });

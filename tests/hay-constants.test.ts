@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { stepAt, nearestStep, gradeFor, bandMidpoint, levelOf } from '../src/engines/hay-constants';
 
-describe('Hay ladder helpers (PRD §5.1)', () => {
+describe('Hay ladder helpers', () => {
   it('stepAt clamps into the 25-step ladder', () => {
     expect(stepAt(9)).toBe(175);
     expect(stepAt(16)).toBe(460);

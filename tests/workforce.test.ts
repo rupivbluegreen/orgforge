@@ -6,7 +6,7 @@ import {
 import type { ScenarioSnapshot } from '../src/engines/workforce';
 import type { CostTotals } from '../src/engines/cost';
 
-describe('computeOrgStats (PRD §5.10 org readiness/avg Hay)', () => {
+describe('computeOrgStats', () => {
   it('aggregates short/reqCnt across departments into a readiness %', () => {
     const stats = computeOrgStats([
       { gapShort: 2, gapReqCnt: 6, hayTotal: 810 },
@@ -21,7 +21,7 @@ describe('computeOrgStats (PRD §5.10 org readiness/avg Hay)', () => {
   });
 });
 
-describe('captureScenario / compareScenarios (PRD §5.10 FR-WFP-01)', () => {
+describe('captureScenario / compareScenarios', () => {
   const totalsA: CostTotals = { hc: 100, base: 3000000, ctc: 5000000, divisions: 1, departments: 5 };
   const totalsB: CostTotals = { hc: 95, base: 2900000, ctc: 4800000, divisions: 1, departments: 5 };
 
@@ -43,7 +43,7 @@ describe('captureScenario / compareScenarios (PRD §5.10 FR-WFP-01)', () => {
   });
 });
 
-describe('captureBaseline (PRD §5.10 FR-WFP-02 commit)', () => {
+describe('captureBaseline', () => {
   it('keys per-department snapshots by department name', () => {
     const baseline = captureBaseline([
       { deptName: 'Legal', ctc: 11134864, gapPts: 8, short: 2, hayTotal: 810, divisionName: 'Support Functions' },
@@ -52,7 +52,7 @@ describe('captureBaseline (PRD §5.10 FR-WFP-02 commit)', () => {
   });
 });
 
-describe('computeSpanOfControl (PRD §5.10 FR-WFP-03)', () => {
+describe('computeSpanOfControl', () => {
   it('matches a hand-computed 2-department scenario (MONITOR band)', () => {
     const result = computeSpanOfControl([
       {
@@ -87,7 +87,7 @@ describe('computeSpanOfControl (PRD §5.10 FR-WFP-03)', () => {
   });
 });
 
-describe('buildPositionLedger (PRD §5.10 FR-WFP-05)', () => {
+describe('buildPositionLedger', () => {
   it('computes vacancies/status per row and org-wide totals', () => {
     const ledger = buildPositionLedger([
       { deptName: 'Legal', divisionName: 'Support Functions', approvedHC: 45, hc: 41, frozen: false },

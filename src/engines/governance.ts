@@ -65,7 +65,7 @@ export function assessSubdivisionMove(mv: SubDivisionMoveInput, model: OrgModel)
   };
 }
 
-// level>=7 = E1 only, narrower than PRD prose
+// level>=7 = E1 only, narrower than the written rule
 export function assessPersonMove(mv: PersonMoveInput): MoveVerdict {
   const mgrs = mv.toDepartmentPeople.filter((p) => levelOf(p.grade) >= 7).length;
   if (mgrs > 1) {

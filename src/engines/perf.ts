@@ -7,7 +7,7 @@ export interface PerfScaleEntry {
   route: string;
 }
 
-// PRD 5.9 rating scale, behavioural anchors
+// Rating scale, behavioural anchors
 export const PERF_SCALE: PerfScaleEntry[] = [
   { rating: 1, label: 'Unsatisfactory', anchor: 'Consistently misses agreed objectives and role standards despite feedback; behaviours fall short of bank values or control expectations.', route: 'PIP — 90 days, defined exit criteria. No merit; variable pay withheld.' },
   { rating: 2, label: 'Developing', anchor: 'Meets some but not all objectives; capability or behavioural gaps limit full delivery of the role.', route: 'Development plan toward rating 3 (12 months). Reduced merit.' },
@@ -26,7 +26,7 @@ export const perfTrack = (rating: PerfRating): string =>
 export const perfStream = (grade: string): string =>
   grade[0] === 'C' ? 'Operations' : grade[0] === 'P' ? 'Professional' : grade[0] === 'M' ? 'Management' : 'Executive';
 
-// FR-PRF-04: 1->PIP-01, 5->STR-01, else family id
+// 1->PIP-01, 5->STR-01, else family id
 export function perfPlanId(perf: PerfRating, grade: string): string {
   if (perf === 1) return 'PIP-01';
   if (perf === 5) return 'STR-01';
@@ -48,7 +48,7 @@ export interface Calibration {
   rows: CalibrationRow[];
 }
 
-// FR-PRF-01/02: KPI cards + distribution
+// KPI cards + distribution
 export function computeCalibration(ratings: PerfRating[]): Calibration {
   const countByRating = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 } as Record<PerfRating, number>;
   ratings.forEach((r) => { countByRating[r]++; });
@@ -64,7 +64,7 @@ export function computeCalibration(ratings: PerfRating[]): Calibration {
   return { countByRating, averageRating, onDevelopmentPlan, rows };
 }
 
-// FR-PRF-05: a rating change recalcs plan + track
+// A rating change recalcs plan + track
 export interface RatingChangeResult {
   previousRating: PerfRating;
   newRating: PerfRating;

@@ -46,7 +46,7 @@ export interface UiOrgModel {
 
 type EmbeddedRow = { division: string; subdivision: string; department: string; hc: number; base: number };
 
-// PEOPLE_PER_DEPT from PRD §4.2 / Build 6 CONFIG
+// PEOPLE_PER_DEPT from the original CONFIG
 const PEOPLE_PER_DEPT = 3;
 
 export function buildInitialModel(now: Date = new Date()): UiOrgModel {

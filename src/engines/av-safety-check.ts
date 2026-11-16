@@ -21,7 +21,7 @@ function walkTsFiles(dir: string): string[] {
   return out;
 }
 
-// PRD §9: no eval/new Function in the source
+// no eval/new Function in the source
 export function findEvalViolations(rootDir: string): EvalViolation[] {
   const violations: EvalViolation[] = [];
   for (const file of walkTsFiles(rootDir)) {

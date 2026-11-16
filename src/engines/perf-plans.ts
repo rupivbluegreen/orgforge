@@ -1,4 +1,4 @@
-// PRD 5.9 FR-PRF-04: 70/20/10 library, verbatim
+// 70/20/10 library, verbatim
 export interface PerfPlan {
   stream: string;
   trans: string;
@@ -154,7 +154,7 @@ export const PERF_PLANS: Record<string, PerfPlan> = {
   },
 };
 
-// FR-PRF-06: roadmap card, static content
+// Roadmap card, static content
 export interface PerfRoadmapModule {
   no: string;
   name: string;

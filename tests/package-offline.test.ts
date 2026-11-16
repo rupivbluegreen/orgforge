@@ -4,7 +4,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 
-describe('package-offline.mjs (PRD §9 offline zip + SHA256SUMS)', () => {
+describe('package-offline.mjs', () => {
   it(
     'builds, packages, and produces a manifest that matches the actual dist/ files',
     () => {

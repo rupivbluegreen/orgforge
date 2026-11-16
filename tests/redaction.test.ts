@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { redactContext } from '../src/engines/redaction';
 
-describe('redactContext (PRD §8.5 data minimization)', () => {
+describe('redactContext', () => {
   it('strips named fields at the top level', () => {
     const ctx = { name: 'Mariam Khalifa', grade: 'M3', sal: 458000 };
     expect(redactContext(ctx, ['name'])).toEqual({ grade: 'M3', sal: 458000 });

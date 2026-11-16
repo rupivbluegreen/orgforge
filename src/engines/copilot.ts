@@ -11,7 +11,7 @@ import { fmtAED, fmtN } from './format';
 import type { Person } from './person';
 import type { DepartmentInput, OrgModel, MoveVerdict } from './types';
 
-// PRD 8.3 tab names for sidebar/fallback
+// Tab names for sidebar/fallback
 export const TAB_NAMES: Record<string, string> = {
   org: 'Org Design', comp: 'Competency', sheet: 'Composite Sheet', jd: 'JD Studio',
   chart: 'Org Chart', rewards: 'Rewards', uae: 'UAE Compliance', talent: 'Talent',
@@ -25,7 +25,7 @@ export type CopilotIntent =
   | 'why-invalid' | 'reporting-line' | 'scenario' | 'okrs' | 'manager-help'
   | 'gap-path' | 'reeval' | 'equity' | 'policy' | 'fallback';
 
-// PRD 8.3 keyword router, order as shipped
+// Keyword router, order as shipped
 export function classifyIntent(query: string): CopilotIntent {
   const t = query.toLowerCase();
   if (/why.*(invalid|flag)|invalid|violat/.test(t)) return 'why-invalid';
@@ -111,7 +111,7 @@ export interface UnitRef {
   base: number;
 }
 
-// PRD 8.3 fuzzy unit-name match
+// Fuzzy unit-name match
 export function findUnits(text: string, units: UnitRef[]): UnitRef[] {
   const t = text.toLowerCase();
   return units.filter((u) => u.name.length > 2 && t.includes(u.name.toLowerCase().split(' ')[0])).slice(0, 4);

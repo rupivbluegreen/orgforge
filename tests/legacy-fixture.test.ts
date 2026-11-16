@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { execSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 
-describe('legacy fixture (Build 6\'s shipped, pre-fix behaviour)', () => {
+describe('legacy fixture (the originally shipped, pre-fix behaviour)', () => {
   it('reproduces the shipped Legal Hay total/grade/CTC exactly', () => {
     execSync('node scripts/legacy-hay-cost.mjs', { stdio: 'pipe' });
     const rows = JSON.parse(readFileSync('fixtures/legacy-hay-cost.json', 'utf8'));

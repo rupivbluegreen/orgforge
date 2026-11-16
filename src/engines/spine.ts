@@ -1,7 +1,7 @@
 import type { Ledger } from './ledger';
 import { fmtAED } from './format';
 
-// PRD §7.1: real ORDS is a drop-in SpineAPI swap
+// real ORDS is a drop-in SpineAPI swap
 export const SPINE_BASE_PATH = '/ords/hr/orgstudio/v1';
 
 export interface OrgChangePayload {

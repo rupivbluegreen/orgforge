@@ -12,7 +12,7 @@ import type { Person } from './person';
 const gapLine = (gaps: GeneratorContext['sfia_gaps']): string =>
   gaps.length ? gaps.map((g) => `${g.skill} (L${g.have}→L${g.required})`).join(', ') : 'none — profile fully met';
 
-// PRD 8.2 'narrative': appraisal narrative
+// appraisal narrative
 export function draftPerfNarrative(c: GeneratorContext): string {
   const crTxt = c.compa_ratio < 0.9 ? 'paid below band midpoint' : c.compa_ratio > 1.1 ? 'paid above band midpoint' : 'paid around band midpoint';
   return `PERFORMANCE COMMENTARY — ${c.name} (${c.id})
@@ -28,7 +28,7 @@ RATING RATIONALE
 Rating ${c.performance_rating}/5 reflects delivery vs objectives, SFIA capability position and behavioural evidence. DRAFT — manager to edit before submission.`;
 }
 
-// PRD §8.2 'idp': personalized 70/20/10 IDP
+// personalized 70/20/10 IDP
 export function draftIdp(c: GeneratorContext): string {
   const pl: Partial<PerfPlan> = c.plan || {};
   return `INDIVIDUAL DEVELOPMENT PLAN — ${c.name} (${c.id}) · ${c.job}, ${c.grade}
@@ -58,7 +58,7 @@ export interface InterviewContext {
   skills: { code: string; name: string; lvl: number }[];
 }
 
-// PRD 8.2 'interview': SFIA questions + rubric
+// SFIA questions + rubric
 export function draftInterviewKit(c: InterviewContext): string {
   const qs = c.skills.map(
     (s, i) => `${i + 1}. [${s.code} · target L${s.lvl}] Walk me through a situation where you personally delivered ${s.name.toLowerCase()} end-to-end in a banking context. What did you own, what went wrong, and what was the measurable outcome?`
@@ -75,7 +75,7 @@ export interface EvalNotesContext {
   skills: { name: string }[];
 }
 
-// PRD 8.2 'evalnotes': notes -> evaluation
+// notes -> evaluation
 export function draftEvalNotes(c: EvalNotesContext): string {
   const t = (c.notes || '').toLowerCase();
   const pos = ['well', 'strong', 'good', 'quantified', 'clear', 'excellent', 'confident', 'structured'].filter((w) => t.includes(w));
@@ -99,7 +99,7 @@ const SKILLS_MAP: [RegExp, string, string][] = [
   [/strateg/, 'STPL', 'Strategic planning'],
 ];
 
-// PRD 8.2 'skills': text -> SFIA skills
+// text -> SFIA skills
 export function inferSkills(text: string): string {
   const t = (text || '').toLowerCase();
   const sen = /senior|lead|manager|head|9 years|10 years|director/.test(t) ? 5 : /officer|analyst|3 years|4 years/.test(t) ? 3 : 4;
@@ -126,7 +126,7 @@ export interface TalentTalkingPointsContext {
   notables: TalentNotable[];
 }
 
-// PRD 8.2 'talent': 9-box talking points
+// 9-box talking points
 export function draftTalentTalkingPoints(c: TalentTalkingPointsContext): string {
   return `TALENT REVIEW — CALIBRATION TALKING POINTS\n\nDISTRIBUTION\n${c.dist}\n\nINDIVIDUALS WORTH DISCUSSING\n${c.notables
     .map((n) => `• ${n.name} (${n.grade}, ${n.dept}) — ${n.cell}. Rating ${n.perf}, SFIA surplus ${n.surplus}${n.flight ? ', FLIGHT RISK (underpaid + overqualified) — retention case' : ''}. ${n.tip}`)
@@ -144,7 +144,7 @@ export interface ScenarioNarrativeContext {
   moves: number;
 }
 
-// PRD 8.2 'scenario': exec narrative
+// exec narrative
 export function draftScenarioNarrative(c: ScenarioNarrativeContext): string {
   return `EXECUTIVE SCENARIO NARRATIVE\n\n${c.headline}\n\nCOST — Annual CTC moves from ${fmtAED(c.baseCtc)} to ${fmtAED(c.curCtc)} (${c.curCtc >= c.baseCtc ? '+' : ''}${fmtAED(c.curCtc - c.baseCtc)}). Headcount ${fmtN(c.hc)} across ${c.depts} departments.\nSPAN OF CONTROL — averaging ${c.span} directs per manager${c.span > 9 ? ' — above the 8–9 comfort band; supervision and control risk rises' : ' — within the healthy 6–9 band'}.\nSUCCESSION — ${c.succGaps} critical role(s) currently lack a ready-in-1-year successor${c.succGaps > 0 ? '; any de-layering deepens this before it saves cost' : ''}.\nSTRUCTURAL MOVES — ${c.moves} change(s) applied this session (see Ledger).\n\nRECOMMENDATION — ${c.curCtc < c.baseCtc ? 'Bank the saving but stage it: protect succession-critical layers, hold spans ≤9, and re-run pay-equity before implementation.' : 'Costs are up vs baseline: tie every addition to the pay line and revisit spans before approving.'}\nDRAFT — for ExCo pre-read; figures recalc live with the model.`;
 }
@@ -163,7 +163,7 @@ const SENTIMENT_THEME_PATTERNS: [string, RegExp][] = [
   ['Recognition', /recogni|apprecia/],
 ];
 
-// PRD 8.2 'sentiment': survey themes
+// survey themes
 export function analyzeSentiment(comments: SentimentComment[]): string {
   const byDiv = new Map<string, number[]>();
   const themes: Record<string, number> = { Pay: 0, Workload: 0, Manager: 0, Career: 0, Systems: 0, Recognition: 0 };
@@ -192,7 +192,7 @@ export type LetterDocType =
   | 'Offer Letter' | 'Employment Contract Summary' | 'Promotion Letter' | 'Warning Letter'
   | 'No Objection Certificate (NOC)' | 'Salary Certificate' | 'Experience Certificate';
 
-// PRD 8.2 'letter': HR doc factory
+// HR doc factory
 export function draftLetter(c: GeneratorContext, doc: LetterDocType, now: Date = new Date()): string {
   const today = now.toISOString().slice(0, 10);
   const monthly = Math.round(c.annual_base_AED / 12);
@@ -210,7 +210,7 @@ export function draftLetter(c: GeneratorContext, doc: LetterDocType, now: Date =
   return L[doc];
 }
 
-// PRD 8.2 'policy': UAE law assistant
+// UAE law assistant
 export function answerPolicyQuestion(q: string): string {
   const t = (q || '').toLowerCase();
   const cite = (c: string): string => `\n\n📎 ${c}\nℹ Figures are indicative — HR confirms final amounts. (Native engine — switch to Live AI for free-form answers.)`;
@@ -233,7 +233,7 @@ export function answerPolicyQuestion(q: string): string {
 
 const GRADE_ORDER = ['C3', 'C2', 'C1', 'P4', 'P3', 'P2', 'P1', 'M3', 'M2', 'M1', 'E3', 'E2', 'E1'];
 
-// PRD 8.2 'career': next role + gaps
+// next role + gaps
 export function draftCareerAdvice(person: Person, divName: string, subdivisionName: string, deptName: string): string {
   const idx = GRADE_ORDER.indexOf(person.grade);
   const nxt = GRADE_ORDER[Math.min(GRADE_ORDER.length - 1, idx + 1)];

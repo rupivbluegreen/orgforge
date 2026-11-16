@@ -2,7 +2,7 @@ import { GRADE_LEVEL } from './hay-constants';
 import { CostEngine } from './cost';
 import type { CostTotals } from './cost';
 
-// PRD 5.10 orgStats: readiness/avg Hay
+// readiness/avg Hay
 export interface OrgStatsInput {
   gapShort: number;
   gapReqCnt: number;
@@ -29,7 +29,7 @@ export function computeOrgStats(depts: OrgStatsInput[]): OrgStats {
   };
 }
 
-// PRD 5.10 FR-WFP-01/02 scenario
+// Scenario
 export interface ScenarioSnapshot {
   totals: CostTotals;
   ready: number;
@@ -69,7 +69,7 @@ export interface DepartmentBaselineInput extends DepartmentBaseline {
   deptName: string;
 }
 
-// FR-WFP-02: KPI delta baseline
+// KPI delta baseline
 export function captureBaseline(depts: DepartmentBaselineInput[]): Record<string, DepartmentBaseline> {
   const out: Record<string, DepartmentBaseline> = {};
   depts.forEach((d) => {
@@ -78,7 +78,7 @@ export function captureBaseline(depts: DepartmentBaselineInput[]): Record<string
   return out;
 }
 
-// PRD 5.10 FR-WFP-03 span of control
+// Span of control
 export interface SpanDepartment {
   headHayTotal: number;
   people: { grade: string; sal: number }[];
@@ -115,7 +115,7 @@ export function computeSpanOfControl(depts: SpanDepartment[]): SpanOfControl {
   return { managers, ics, managementCost, span, status };
 }
 
-// PRD 5.10 FR-WFP-05 position ledger
+// Position ledger
 export interface PositionDepartment {
   deptName: string;
   divisionName: string;

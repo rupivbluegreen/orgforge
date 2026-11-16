@@ -2,8 +2,8 @@ import { describe, it, expect } from 'vitest';
 import { Ledger } from '../src/engines/ledger';
 import { MockOracleSpine, SPINE_BASE_PATH } from '../src/engines/spine';
 
-describe('MockOracleSpine (PRD §7.2 Spine API surface)', () => {
-  it('exposes the ORDS base path from PRD §7.1', () => {
+describe('MockOracleSpine', () => {
+  it('exposes the ORDS base path from the spec', () => {
     expect(SPINE_BASE_PATH).toBe('/ords/hr/orgstudio/v1');
   });
 
@@ -15,7 +15,7 @@ describe('MockOracleSpine (PRD §7.2 Spine API surface)', () => {
     expect(ledger.recent[0]).toMatchObject({ kind: 'read', op: 'ORA-READ', message: 'SELECT org_snapshot — mocked (Excel/embedded)' });
   });
 
-  it('writeOrgChange logs the move and returns a MOCK_OK transaction id (AC-1 scenario)', async () => {
+  it('writeOrgChange logs the move and returns a MOCK_OK transaction id', async () => {
     const ledger = new Ledger();
     const spine = new MockOracleSpine(ledger);
     const result = await spine.writeOrgChange({ entityType: 'department', entity: 'Legal', to: { division: 'Retail Banking Group' }, moveId: 'MV-1' });

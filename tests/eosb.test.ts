@@ -6,7 +6,7 @@ import type { Person } from '../src/engines/person';
 const NOW = new Date('2026-09-22T00:00:00.000Z');
 const [mariam, rohan, huda] = seedDepartmentPeople('Support Functions', 'Risk & Control Functions', 'Legal', 3, 1, NOW);
 
-describe('EOSB / compa-ratio engine (PRD §5.8, §5.4)', () => {
+describe('EOSB / compa-ratio engine', () => {
   it('gradeMid computes the pay-line anchor per grade', () => {
     // M3 -> level 6: (6500 + 6*5200 + 1500) * 12
     expect(gradeMid('M3')).toBe(470400);
@@ -37,7 +37,7 @@ describe('EOSB / compa-ratio engine (PRD §5.8, §5.4)', () => {
   });
 });
 
-describe('flightRisk — underpaid + overqualified (PRD §5.9)', () => {
+describe('flightRisk — underpaid + overqualified', () => {
   const basePerson: Person = {
     id: 'EMP-TEST', name: 'Test Person', grade: 'M2', job: 'Test',
     skills: { RSKM: 5, GOVN: 3, AMLC: 5, DAAN: 4, AUDT: 2, PEDP: 6 },

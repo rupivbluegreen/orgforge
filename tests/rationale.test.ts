@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { draftRationale } from '../src/engines/rationale';
 import type { RationaleContext } from '../src/engines/rationale';
 
-describe('draftRationale — AC-1 scenario (Legal, control-function independence move)', () => {
+describe('draftRationale — (Legal, control-function independence move)', () => {
   const ctx: RationaleContext = {
     entity: 'Legal', entityType: 'department', hc: 41, cost: 7562000,
     from: { division: 'Support Functions', subdivision: 'Risk & Control Functions' },

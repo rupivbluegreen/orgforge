@@ -16,7 +16,7 @@ describe('mulberry32 / hashStr determinism', () => {
   });
 });
 
-describe('makePerson / seedDepartmentPeople — byte-identical to Build 6', () => {
+describe('makePerson / seedDepartmentPeople — byte-identical to the prototype', () => {
   it('Legal (Risk & Control Functions, Support Functions) 3 incumbents match the shipped prototype exactly', () => {
     const people = seedDepartmentPeople('Support Functions', 'Risk & Control Functions', 'Legal', 3, 1, NOW);
 

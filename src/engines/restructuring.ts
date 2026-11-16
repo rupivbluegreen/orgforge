@@ -44,7 +44,7 @@ export interface RestructuringModel {
   recommendedSavings: number;
 }
 
-// PRD §5.8: redundancy vs SFIA redeployment cost
+// redundancy vs SFIA redeployment cost
 export function modelRestructuring(
   deptName: string,
   action: RestructuringAction,

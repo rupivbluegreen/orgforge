@@ -6,10 +6,10 @@ export interface StreamProfile {
 }
 
 /**
- * Fixed per PRD §5.2 P/C/R taxonomy.
- * Build 6 shipped 'S' (Shared) for these two
+ * Fixed P/C/R taxonomy.
+ * The legacy build shipped 'S' (Shared) for these two
  * streams, which never matched governance's
- * R check (AC-1 bug) and skipped Hay's ACC
+ * R check bug and skipped Hay's ACC
  * impact adjustment. See
  * docs/streams-fix-impact-report.md.
  */

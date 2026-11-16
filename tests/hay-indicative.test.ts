@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { HayEngine } from '../src/engines/hay';
 
-describe('HayEngine.indicative — incumbent (non-head) Hay profile (PRD §5.3)', () => {
+describe('HayEngine.indicative — incumbent (non-head) Hay profile', () => {
   it('P2 in Front Office & Distribution: kh 230, ps 87, acc 200, total 517', () => {
     const hay = HayEngine.indicative('P2', 'Front Office & Distribution');
     expect(hay.kh).toEqual({ pts: 230, note: 'Indicative at grade P2 — SFIA responsibility level 4' });
