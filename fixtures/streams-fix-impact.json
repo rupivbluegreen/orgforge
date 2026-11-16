@@ -1,0 +1,608 @@
+{
+  "changed": [
+    {
+      "department": "Legal",
+      "subdivision": "Risk & Control Functions",
+      "before": {
+        "total": 865,
+        "grade": "M2",
+        "ctc": 11161396
+      },
+      "after": {
+        "total": 810,
+        "grade": "M2",
+        "ctc": 11134864
+      }
+    },
+    {
+      "department": "Compliance & AML",
+      "subdivision": "Risk & Control Functions",
+      "before": {
+        "total": 865,
+        "grade": "M2",
+        "ctc": 14038376
+      },
+      "after": {
+        "total": 810,
+        "grade": "M2",
+        "ctc": 14011844
+      }
+    },
+    {
+      "department": "Internal Audit",
+      "subdivision": "Risk & Control Functions",
+      "before": {
+        "total": 899,
+        "grade": "M2",
+        "ctc": 17365918
+      },
+      "after": {
+        "total": 835,
+        "grade": "M2",
+        "ctc": 17335044
+      }
+    },
+    {
+      "department": "Credit Risk",
+      "subdivision": "Risk & Control Functions",
+      "before": {
+        "total": 992,
+        "grade": "M1",
+        "ctc": 25278082
+      },
+      "after": {
+        "total": 928,
+        "grade": "M1",
+        "ctc": 25247208
+      }
+    },
+    {
+      "department": "Market & Liquidity Risk",
+      "subdivision": "Risk & Control Functions",
+      "before": {
+        "total": 958,
+        "grade": "M1",
+        "ctc": 15472819
+      },
+      "after": {
+        "total": 903,
+        "grade": "M2",
+        "ctc": 15446287
+      }
+    },
+    {
+      "department": "Operational Risk",
+      "subdivision": "Risk & Control Functions",
+      "before": {
+        "total": 958,
+        "grade": "M1",
+        "ctc": 16380214
+      },
+      "after": {
+        "total": 903,
+        "grade": "M2",
+        "ctc": 16353682
+      }
+    },
+    {
+      "department": "Fraud Risk & Investigations",
+      "subdivision": "Risk & Control Functions",
+      "before": {
+        "total": 958,
+        "grade": "M1",
+        "ctc": 18095146
+      },
+      "after": {
+        "total": 903,
+        "grade": "M2",
+        "ctc": 18068614
+      }
+    },
+    {
+      "department": "Model Risk & Analytics",
+      "subdivision": "Risk & Control Functions",
+      "before": {
+        "total": 865,
+        "grade": "M2",
+        "ctc": 16892522
+      },
+      "after": {
+        "total": 810,
+        "grade": "M2",
+        "ctc": 16865990
+      }
+    },
+    {
+      "department": "IT Infrastructure & Cloud",
+      "subdivision": "Technology & Digital",
+      "before": {
+        "total": 1108,
+        "grade": "M1",
+        "ctc": 31941955
+      },
+      "after": {
+        "total": 1062,
+        "grade": "M1",
+        "ctc": 31919765
+      }
+    },
+    {
+      "department": "Core Banking Applications",
+      "subdivision": "Technology & Digital",
+      "before": {
+        "total": 1108,
+        "grade": "M1",
+        "ctc": 26109846
+      },
+      "after": {
+        "total": 1062,
+        "grade": "M1",
+        "ctc": 26087656
+      }
+    },
+    {
+      "department": "Cyber & Information Security",
+      "subdivision": "Technology & Digital",
+      "before": {
+        "total": 1108,
+        "grade": "M1",
+        "ctc": 28251488
+      },
+      "after": {
+        "total": 1062,
+        "grade": "M1",
+        "ctc": 28229298
+      }
+    },
+    {
+      "department": "Data & Analytics",
+      "subdivision": "Technology & Digital",
+      "before": {
+        "total": 1108,
+        "grade": "M1",
+        "ctc": 34119616
+      },
+      "after": {
+        "total": 1062,
+        "grade": "M1",
+        "ctc": 34097426
+      }
+    },
+    {
+      "department": "Open Banking & APIs",
+      "subdivision": "Technology & Digital",
+      "before": {
+        "total": 865,
+        "grade": "M2",
+        "ctc": 18235202
+      },
+      "after": {
+        "total": 835,
+        "grade": "M2",
+        "ctc": 18220730
+      }
+    },
+    {
+      "department": "Customer Experience Design",
+      "subdivision": "Technology & Digital",
+      "before": {
+        "total": 865,
+        "grade": "M2",
+        "ctc": 17109361
+      },
+      "after": {
+        "total": 835,
+        "grade": "M2",
+        "ctc": 17094889
+      }
+    }
+  ],
+  "unchanged": [
+    {
+      "department": "Human Resources",
+      "subdivision": "Business Support",
+      "before": {
+        "total": 812,
+        "grade": "M2",
+        "ctc": 14448309
+      },
+      "after": {
+        "total": 812,
+        "grade": "M2",
+        "ctc": 14448309
+      }
+    },
+    {
+      "department": "Finance & Accounting",
+      "subdivision": "Business Support",
+      "before": {
+        "total": 812,
+        "grade": "M2",
+        "ctc": 11239009
+      },
+      "after": {
+        "total": 812,
+        "grade": "M2",
+        "ctc": 11239009
+      }
+    },
+    {
+      "department": "Corporate Communications",
+      "subdivision": "Business Support",
+      "before": {
+        "total": 812,
+        "grade": "M2",
+        "ctc": 15418469
+      },
+      "after": {
+        "total": 812,
+        "grade": "M2",
+        "ctc": 15418469
+      }
+    },
+    {
+      "department": "Procurement & Administration",
+      "subdivision": "Business Support",
+      "before": {
+        "total": 812,
+        "grade": "M2",
+        "ctc": 12140829
+      },
+      "after": {
+        "total": 812,
+        "grade": "M2",
+        "ctc": 12140829
+      }
+    },
+    {
+      "department": "Strategy & Transformation",
+      "subdivision": "Business Support",
+      "before": {
+        "total": 812,
+        "grade": "M2",
+        "ctc": 10542209
+      },
+      "after": {
+        "total": 812,
+        "grade": "M2",
+        "ctc": 10542209
+      }
+    },
+    {
+      "department": "Branch Network",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 1400,
+        "grade": "E3",
+        "ctc": 45813729
+      },
+      "after": {
+        "total": 1400,
+        "grade": "E3",
+        "ctc": 45813729
+      }
+    },
+    {
+      "department": "Personal Banking Products",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 1400,
+        "grade": "E3",
+        "ctc": 45096159
+      },
+      "after": {
+        "total": 1400,
+        "grade": "E3",
+        "ctc": 45096159
+      }
+    },
+    {
+      "department": "Cards & Payments",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 1400,
+        "grade": "E3",
+        "ctc": 42407382
+      },
+      "after": {
+        "total": 1400,
+        "grade": "E3",
+        "ctc": 42407382
+      }
+    },
+    {
+      "department": "Wealth & Priority Banking",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 1400,
+        "grade": "E3",
+        "ctc": 42618432
+      },
+      "after": {
+        "total": 1400,
+        "grade": "E3",
+        "ctc": 42618432
+      }
+    },
+    {
+      "department": "Islamic Banking (Retail)",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 1400,
+        "grade": "E3",
+        "ctc": 37857144
+      },
+      "after": {
+        "total": 1400,
+        "grade": "E3",
+        "ctc": 37857144
+      }
+    },
+    {
+      "department": "Mortgages & Auto Finance",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 1400,
+        "grade": "E3",
+        "ctc": 46904154
+      },
+      "after": {
+        "total": 1400,
+        "grade": "E3",
+        "ctc": 46904154
+      }
+    },
+    {
+      "department": "Contact Centre",
+      "subdivision": "Operations",
+      "before": {
+        "total": 1238,
+        "grade": "E3",
+        "ctc": 39432220
+      },
+      "after": {
+        "total": 1238,
+        "grade": "E3",
+        "ctc": 39432220
+      }
+    },
+    {
+      "department": "Corporate Coverage",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 1032,
+        "grade": "M1",
+        "ctc": 26896507
+      },
+      "after": {
+        "total": 1032,
+        "grade": "M1",
+        "ctc": 26896507
+      }
+    },
+    {
+      "department": "Trade Finance",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 1128,
+        "grade": "M1",
+        "ctc": 30113391
+      },
+      "after": {
+        "total": 1128,
+        "grade": "M1",
+        "ctc": 30113391
+      }
+    },
+    {
+      "department": "Cash Management & Transaction Banking",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 1032,
+        "grade": "M1",
+        "ctc": 29456845
+      },
+      "after": {
+        "total": 1032,
+        "grade": "M1",
+        "ctc": 29456845
+      }
+    },
+    {
+      "department": "Financial Institutions",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 1032,
+        "grade": "M1",
+        "ctc": 30454743
+      },
+      "after": {
+        "total": 1032,
+        "grade": "M1",
+        "ctc": 30454743
+      }
+    },
+    {
+      "department": "Project & Structured Finance",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 1128,
+        "grade": "M1",
+        "ctc": 36352833
+      },
+      "after": {
+        "total": 1128,
+        "grade": "M1",
+        "ctc": 36352833
+      }
+    },
+    {
+      "department": "SME Banking",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 1032,
+        "grade": "M1",
+        "ctc": 25188141
+      },
+      "after": {
+        "total": 1032,
+        "grade": "M1",
+        "ctc": 25188141
+      }
+    },
+    {
+      "department": "FX & Rates Trading",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 816,
+        "grade": "M2",
+        "ctc": 9902412
+      },
+      "after": {
+        "total": 816,
+        "grade": "M2",
+        "ctc": 9902412
+      }
+    },
+    {
+      "department": "Money Markets & Liquidity",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 816,
+        "grade": "M2",
+        "ctc": 15735097
+      },
+      "after": {
+        "total": 816,
+        "grade": "M2",
+        "ctc": 15735097
+      }
+    },
+    {
+      "department": "Investments & ALM",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 816,
+        "grade": "M2",
+        "ctc": 15923099
+      },
+      "after": {
+        "total": 816,
+        "grade": "M2",
+        "ctc": 15923099
+      }
+    },
+    {
+      "department": "Treasury Sales",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 816,
+        "grade": "M2",
+        "ctc": 16930913
+      },
+      "after": {
+        "total": 816,
+        "grade": "M2",
+        "ctc": 16930913
+      }
+    },
+    {
+      "department": "Derivatives Structuring",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 816,
+        "grade": "M2",
+        "ctc": 17445607
+      },
+      "after": {
+        "total": 816,
+        "grade": "M2",
+        "ctc": 17445607
+      }
+    },
+    {
+      "department": "Collections & Recoveries",
+      "subdivision": "Operations",
+      "before": {
+        "total": 933,
+        "grade": "M1",
+        "ctc": 25032540
+      },
+      "after": {
+        "total": 933,
+        "grade": "M1",
+        "ctc": 25032540
+      }
+    },
+    {
+      "department": "Central Operations",
+      "subdivision": "Operations",
+      "before": {
+        "total": 1188,
+        "grade": "E3",
+        "ctc": 39139363
+      },
+      "after": {
+        "total": 1188,
+        "grade": "E3",
+        "ctc": 39139363
+      }
+    },
+    {
+      "department": "Payments Operations",
+      "subdivision": "Operations",
+      "before": {
+        "total": 1032,
+        "grade": "M1",
+        "ctc": 28594528
+      },
+      "after": {
+        "total": 1032,
+        "grade": "M1",
+        "ctc": 28594528
+      }
+    },
+    {
+      "department": "Digital Channels",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 816,
+        "grade": "M2",
+        "ctc": 12330305
+      },
+      "after": {
+        "total": 816,
+        "grade": "M2",
+        "ctc": 12330305
+      }
+    },
+    {
+      "department": "Mobile Banking Products",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 816,
+        "grade": "M2",
+        "ctc": 14641564
+      },
+      "after": {
+        "total": 816,
+        "grade": "M2",
+        "ctc": 14641564
+      }
+    },
+    {
+      "department": "Fintech Partnerships",
+      "subdivision": "Front Office & Distribution",
+      "before": {
+        "total": 899,
+        "grade": "M2",
+        "ctc": 18609062
+      },
+      "after": {
+        "total": 899,
+        "grade": "M2",
+        "ctc": 18609062
+      }
+    }
+  ]
+}

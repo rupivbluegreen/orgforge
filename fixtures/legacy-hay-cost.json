@@ -1,0 +1,561 @@
+[
+  {
+    "division": "Support Functions",
+    "subdivision": "Business Support",
+    "department": "Human Resources",
+    "hay": {
+      "kh": 460,
+      "ps": 152,
+      "acc": 200,
+      "total": 812,
+      "grade": "M2"
+    },
+    "ctc": 14448309
+  },
+  {
+    "division": "Support Functions",
+    "subdivision": "Business Support",
+    "department": "Finance & Accounting",
+    "hay": {
+      "kh": 460,
+      "ps": 152,
+      "acc": 200,
+      "total": 812,
+      "grade": "M2"
+    },
+    "ctc": 11239009
+  },
+  {
+    "division": "Support Functions",
+    "subdivision": "Business Support",
+    "department": "Corporate Communications",
+    "hay": {
+      "kh": 460,
+      "ps": 152,
+      "acc": 200,
+      "total": 812,
+      "grade": "M2"
+    },
+    "ctc": 15418469
+  },
+  {
+    "division": "Support Functions",
+    "subdivision": "Business Support",
+    "department": "Procurement & Administration",
+    "hay": {
+      "kh": 460,
+      "ps": 152,
+      "acc": 200,
+      "total": 812,
+      "grade": "M2"
+    },
+    "ctc": 12140829
+  },
+  {
+    "division": "Support Functions",
+    "subdivision": "Business Support",
+    "department": "Strategy & Transformation",
+    "hay": {
+      "kh": 460,
+      "ps": 152,
+      "acc": 200,
+      "total": 812,
+      "grade": "M2"
+    },
+    "ctc": 10542209
+  },
+  {
+    "division": "Support Functions",
+    "subdivision": "Risk & Control Functions",
+    "department": "Legal",
+    "hay": {
+      "kh": 460,
+      "ps": 175,
+      "acc": 230,
+      "total": 865,
+      "grade": "M2"
+    },
+    "ctc": 11161396
+  },
+  {
+    "division": "Support Functions",
+    "subdivision": "Risk & Control Functions",
+    "department": "Compliance & AML",
+    "hay": {
+      "kh": 460,
+      "ps": 175,
+      "acc": 230,
+      "total": 865,
+      "grade": "M2"
+    },
+    "ctc": 14038376
+  },
+  {
+    "division": "Support Functions",
+    "subdivision": "Risk & Control Functions",
+    "department": "Internal Audit",
+    "hay": {
+      "kh": 460,
+      "ps": 175,
+      "acc": 264,
+      "total": 899,
+      "grade": "M2"
+    },
+    "ctc": 17365918
+  },
+  {
+    "division": "Retail Banking Group",
+    "subdivision": "Front Office & Distribution",
+    "department": "Branch Network",
+    "hay": {
+      "kh": 608,
+      "ps": 264,
+      "acc": 528,
+      "total": 1400,
+      "grade": "E3"
+    },
+    "ctc": 45813729
+  },
+  {
+    "division": "Retail Banking Group",
+    "subdivision": "Front Office & Distribution",
+    "department": "Personal Banking Products",
+    "hay": {
+      "kh": 608,
+      "ps": 264,
+      "acc": 528,
+      "total": 1400,
+      "grade": "E3"
+    },
+    "ctc": 45096159
+  },
+  {
+    "division": "Retail Banking Group",
+    "subdivision": "Front Office & Distribution",
+    "department": "Cards & Payments",
+    "hay": {
+      "kh": 608,
+      "ps": 264,
+      "acc": 528,
+      "total": 1400,
+      "grade": "E3"
+    },
+    "ctc": 42407382
+  },
+  {
+    "division": "Retail Banking Group",
+    "subdivision": "Front Office & Distribution",
+    "department": "Wealth & Priority Banking",
+    "hay": {
+      "kh": 608,
+      "ps": 264,
+      "acc": 528,
+      "total": 1400,
+      "grade": "E3"
+    },
+    "ctc": 42618432
+  },
+  {
+    "division": "Retail Banking Group",
+    "subdivision": "Front Office & Distribution",
+    "department": "Islamic Banking (Retail)",
+    "hay": {
+      "kh": 608,
+      "ps": 264,
+      "acc": 528,
+      "total": 1400,
+      "grade": "E3"
+    },
+    "ctc": 37857144
+  },
+  {
+    "division": "Retail Banking Group",
+    "subdivision": "Front Office & Distribution",
+    "department": "Mortgages & Auto Finance",
+    "hay": {
+      "kh": 608,
+      "ps": 264,
+      "acc": 528,
+      "total": 1400,
+      "grade": "E3"
+    },
+    "ctc": 46904154
+  },
+  {
+    "division": "Retail Banking Group",
+    "subdivision": "Operations",
+    "department": "Contact Centre",
+    "hay": {
+      "kh": 608,
+      "ps": 230,
+      "acc": 400,
+      "total": 1238,
+      "grade": "E3"
+    },
+    "ctc": 39432220
+  },
+  {
+    "division": "Corporate & Institutional Banking",
+    "subdivision": "Front Office & Distribution",
+    "department": "Corporate Coverage",
+    "hay": {
+      "kh": 528,
+      "ps": 200,
+      "acc": 304,
+      "total": 1032,
+      "grade": "M1"
+    },
+    "ctc": 26896507
+  },
+  {
+    "division": "Corporate & Institutional Banking",
+    "subdivision": "Front Office & Distribution",
+    "department": "Trade Finance",
+    "hay": {
+      "kh": 528,
+      "ps": 200,
+      "acc": 400,
+      "total": 1128,
+      "grade": "M1"
+    },
+    "ctc": 30113391
+  },
+  {
+    "division": "Corporate & Institutional Banking",
+    "subdivision": "Front Office & Distribution",
+    "department": "Cash Management & Transaction Banking",
+    "hay": {
+      "kh": 528,
+      "ps": 200,
+      "acc": 304,
+      "total": 1032,
+      "grade": "M1"
+    },
+    "ctc": 29456845
+  },
+  {
+    "division": "Corporate & Institutional Banking",
+    "subdivision": "Front Office & Distribution",
+    "department": "Financial Institutions",
+    "hay": {
+      "kh": 528,
+      "ps": 200,
+      "acc": 304,
+      "total": 1032,
+      "grade": "M1"
+    },
+    "ctc": 30454743
+  },
+  {
+    "division": "Corporate & Institutional Banking",
+    "subdivision": "Front Office & Distribution",
+    "department": "Project & Structured Finance",
+    "hay": {
+      "kh": 528,
+      "ps": 200,
+      "acc": 400,
+      "total": 1128,
+      "grade": "M1"
+    },
+    "ctc": 36352833
+  },
+  {
+    "division": "Corporate & Institutional Banking",
+    "subdivision": "Front Office & Distribution",
+    "department": "SME Banking",
+    "hay": {
+      "kh": 528,
+      "ps": 200,
+      "acc": 304,
+      "total": 1032,
+      "grade": "M1"
+    },
+    "ctc": 25188141
+  },
+  {
+    "division": "Treasury & Global Markets",
+    "subdivision": "Front Office & Distribution",
+    "department": "FX & Rates Trading",
+    "hay": {
+      "kh": 400,
+      "ps": 152,
+      "acc": 264,
+      "total": 816,
+      "grade": "M2"
+    },
+    "ctc": 9902412
+  },
+  {
+    "division": "Treasury & Global Markets",
+    "subdivision": "Front Office & Distribution",
+    "department": "Money Markets & Liquidity",
+    "hay": {
+      "kh": 400,
+      "ps": 152,
+      "acc": 264,
+      "total": 816,
+      "grade": "M2"
+    },
+    "ctc": 15735097
+  },
+  {
+    "division": "Treasury & Global Markets",
+    "subdivision": "Front Office & Distribution",
+    "department": "Investments & ALM",
+    "hay": {
+      "kh": 400,
+      "ps": 152,
+      "acc": 264,
+      "total": 816,
+      "grade": "M2"
+    },
+    "ctc": 15923099
+  },
+  {
+    "division": "Treasury & Global Markets",
+    "subdivision": "Front Office & Distribution",
+    "department": "Treasury Sales",
+    "hay": {
+      "kh": 400,
+      "ps": 152,
+      "acc": 264,
+      "total": 816,
+      "grade": "M2"
+    },
+    "ctc": 16930913
+  },
+  {
+    "division": "Treasury & Global Markets",
+    "subdivision": "Front Office & Distribution",
+    "department": "Derivatives Structuring",
+    "hay": {
+      "kh": 400,
+      "ps": 152,
+      "acc": 264,
+      "total": 816,
+      "grade": "M2"
+    },
+    "ctc": 17445607
+  },
+  {
+    "division": "Risk Management Group",
+    "subdivision": "Risk & Control Functions",
+    "department": "Credit Risk",
+    "hay": {
+      "kh": 528,
+      "ps": 200,
+      "acc": 264,
+      "total": 992,
+      "grade": "M1"
+    },
+    "ctc": 25278082
+  },
+  {
+    "division": "Risk Management Group",
+    "subdivision": "Risk & Control Functions",
+    "department": "Market & Liquidity Risk",
+    "hay": {
+      "kh": 528,
+      "ps": 200,
+      "acc": 230,
+      "total": 958,
+      "grade": "M1"
+    },
+    "ctc": 15472819
+  },
+  {
+    "division": "Risk Management Group",
+    "subdivision": "Risk & Control Functions",
+    "department": "Operational Risk",
+    "hay": {
+      "kh": 528,
+      "ps": 200,
+      "acc": 230,
+      "total": 958,
+      "grade": "M1"
+    },
+    "ctc": 16380214
+  },
+  {
+    "division": "Risk Management Group",
+    "subdivision": "Risk & Control Functions",
+    "department": "Fraud Risk & Investigations",
+    "hay": {
+      "kh": 528,
+      "ps": 200,
+      "acc": 230,
+      "total": 958,
+      "grade": "M1"
+    },
+    "ctc": 18095146
+  },
+  {
+    "division": "Risk Management Group",
+    "subdivision": "Risk & Control Functions",
+    "department": "Model Risk & Analytics",
+    "hay": {
+      "kh": 460,
+      "ps": 175,
+      "acc": 230,
+      "total": 865,
+      "grade": "M2"
+    },
+    "ctc": 16892522
+  },
+  {
+    "division": "Risk Management Group",
+    "subdivision": "Operations",
+    "department": "Collections & Recoveries",
+    "hay": {
+      "kh": 528,
+      "ps": 175,
+      "acc": 230,
+      "total": 933,
+      "grade": "M1"
+    },
+    "ctc": 25032540
+  },
+  {
+    "division": "Operations & Technology",
+    "subdivision": "Operations",
+    "department": "Central Operations",
+    "hay": {
+      "kh": 608,
+      "ps": 230,
+      "acc": 350,
+      "total": 1188,
+      "grade": "E3"
+    },
+    "ctc": 39139363
+  },
+  {
+    "division": "Operations & Technology",
+    "subdivision": "Operations",
+    "department": "Payments Operations",
+    "hay": {
+      "kh": 528,
+      "ps": 200,
+      "acc": 304,
+      "total": 1032,
+      "grade": "M1"
+    },
+    "ctc": 28594528
+  },
+  {
+    "division": "Operations & Technology",
+    "subdivision": "Technology & Digital",
+    "department": "IT Infrastructure & Cloud",
+    "hay": {
+      "kh": 528,
+      "ps": 230,
+      "acc": 350,
+      "total": 1108,
+      "grade": "M1"
+    },
+    "ctc": 31941955
+  },
+  {
+    "division": "Operations & Technology",
+    "subdivision": "Technology & Digital",
+    "department": "Core Banking Applications",
+    "hay": {
+      "kh": 528,
+      "ps": 230,
+      "acc": 350,
+      "total": 1108,
+      "grade": "M1"
+    },
+    "ctc": 26109846
+  },
+  {
+    "division": "Operations & Technology",
+    "subdivision": "Technology & Digital",
+    "department": "Cyber & Information Security",
+    "hay": {
+      "kh": 528,
+      "ps": 230,
+      "acc": 350,
+      "total": 1108,
+      "grade": "M1"
+    },
+    "ctc": 28251488
+  },
+  {
+    "division": "Operations & Technology",
+    "subdivision": "Technology & Digital",
+    "department": "Data & Analytics",
+    "hay": {
+      "kh": 528,
+      "ps": 230,
+      "acc": 350,
+      "total": 1108,
+      "grade": "M1"
+    },
+    "ctc": 34119616
+  },
+  {
+    "division": "Digital Banking & Innovation",
+    "subdivision": "Front Office & Distribution",
+    "department": "Digital Channels",
+    "hay": {
+      "kh": 400,
+      "ps": 152,
+      "acc": 264,
+      "total": 816,
+      "grade": "M2"
+    },
+    "ctc": 12330305
+  },
+  {
+    "division": "Digital Banking & Innovation",
+    "subdivision": "Front Office & Distribution",
+    "department": "Mobile Banking Products",
+    "hay": {
+      "kh": 400,
+      "ps": 152,
+      "acc": 264,
+      "total": 816,
+      "grade": "M2"
+    },
+    "ctc": 14641564
+  },
+  {
+    "division": "Digital Banking & Innovation",
+    "subdivision": "Front Office & Distribution",
+    "department": "Fintech Partnerships",
+    "hay": {
+      "kh": 460,
+      "ps": 175,
+      "acc": 264,
+      "total": 899,
+      "grade": "M2"
+    },
+    "ctc": 18609062
+  },
+  {
+    "division": "Digital Banking & Innovation",
+    "subdivision": "Technology & Digital",
+    "department": "Open Banking & APIs",
+    "hay": {
+      "kh": 460,
+      "ps": 175,
+      "acc": 230,
+      "total": 865,
+      "grade": "M2"
+    },
+    "ctc": 18235202
+  },
+  {
+    "division": "Digital Banking & Innovation",
+    "subdivision": "Technology & Digital",
+    "department": "Customer Experience Design",
+    "hay": {
+      "kh": 460,
+      "ps": 175,
+      "acc": 230,
+      "total": 865,
+      "grade": "M2"
+    },
+    "ctc": 17109361
+  }
+]
