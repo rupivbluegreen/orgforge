@@ -4,7 +4,7 @@ import { mulberry32, hashStr, makePerson, seedDepartmentPeople } from '../src/en
 const NOW = new Date('2026-09-22T00:00:00.000Z');
 
 describe('mulberry32 / hashStr determinism', () => {
-  it('hashStr("Legal") matches the prototype\'s FNV-1a hash', () => {
+  it('hashStr("Legal") matches the reference FNV-1a hash', () => {
     expect(hashStr('Legal')).toBe(3732222122);
   });
 
@@ -16,8 +16,8 @@ describe('mulberry32 / hashStr determinism', () => {
   });
 });
 
-describe('makePerson / seedDepartmentPeople — byte-identical to the prototype', () => {
-  it('Legal (Risk & Control Functions, Support Functions) 3 incumbents match the shipped prototype exactly', () => {
+describe('makePerson / seedDepartmentPeople — byte-identical to the reference', () => {
+  it('Legal (Risk & Control Functions, Support Functions) 3 incumbents match the reference data exactly', () => {
     const people = seedDepartmentPeople('Support Functions', 'Risk & Control Functions', 'Legal', 3, 1, NOW);
 
     expect(people).toHaveLength(3);

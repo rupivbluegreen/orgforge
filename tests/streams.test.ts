@@ -10,7 +10,7 @@ describe('STREAMS classification', () => {
     expect(STREAMS['Business Support'].impact).toBe('C');
   });
 
-  it('no stream is left coded with the prototype\'s unreachable "Shared" impact', () => {
+  it('no stream is left coded with the legacy unreachable "Shared" impact', () => {
     Object.values(STREAMS).forEach((s) => {
       expect(['P', 'C', 'R']).toContain(s.impact);
     });

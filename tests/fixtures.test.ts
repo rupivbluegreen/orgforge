@@ -6,7 +6,7 @@ describe('embedded dataset fixture', () => {
     expect(dataset).toHaveLength(43);
   });
 
-  it('first row matches the prototype source exactly (Human Resources)', () => {
+  it('first row matches the reference source exactly (Human Resources)', () => {
     expect(dataset[0]).toEqual({
       division: 'Support Functions',
       subdivision: 'Business Support',
@@ -16,7 +16,7 @@ describe('embedded dataset fixture', () => {
     });
   });
 
-  it('totals match the prototype\'s actual shipped numbers', () => {
+  it('totals match the reference shipped numbers', () => {
     const hc = dataset.reduce((a: number, r: any) => a + r.hc, 0);
     const base = dataset.reduce((a: number, r: any) => a + r.base, 0);
     expect(hc).toBe(4200);

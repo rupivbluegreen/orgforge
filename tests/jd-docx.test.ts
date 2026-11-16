@@ -49,7 +49,7 @@ describe('buildFallbackDocumentXml (pure WordprocessingML text generation)', () 
   });
 });
 
-describe('buildFallbackDocx (real .docx via jszip, mirrors the prototype PizZip path)', () => {
+describe('buildFallbackDocx (real .docx via jszip, mirrors the reference PizZip path)', () => {
   it('produces a real zip with the 3 required OOXML parts', async () => {
     const buf = await buildFallbackDocx(legalJd);
     expect(buf.subarray(0, 2).toString('latin1')).toBe('PK'); // zip magic

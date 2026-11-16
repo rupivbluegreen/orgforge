@@ -16,7 +16,7 @@ const [mariam, rohan, huda] = seedDepartmentPeople('Support Functions', 'Risk & 
 const people = [mariam, rohan, huda];
 
 describe('fitPayLine / findOutliers', () => {
-  it('OLS fit matches the prototype exactly for the 3 seeded Legal incumbents', () => {
+  it('OLS fit matches the reference exactly for the 3 seeded Legal incumbents', () => {
     const fit = fitPayLine(people);
     expect(fit.slope).toBeCloseTo(411.24625991934437, 6);
     expect(fit.intercept).toBeCloseTo(180642.4266076926, 4);
@@ -32,7 +32,7 @@ describe('fitPayLine / findOutliers', () => {
 });
 
 describe('gradeBandTable', () => {
-  it('one row per grade, sorted by Hay midpoint, matches the prototype', () => {
+  it('one row per grade, sorted by Hay midpoint, matches the reference', () => {
     const fit = fitPayLine(people);
     const rows = gradeBandTable(people, fit);
     expect(rows.map((r) => r.grade)).toEqual(['C2', 'P4', 'M3']);

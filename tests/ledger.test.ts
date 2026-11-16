@@ -32,7 +32,7 @@ describe('Ledger', () => {
     expect(ledger.recent).toHaveLength(2);
   });
 
-  it('defaults to a 60-entry cap matching the prototype', () => {
+  it('defaults to a 60-entry cap matching the reference', () => {
     const ledger = new Ledger();
     for (let i = 0; i < 65; i++) ledger.log('ai', 'AI-GEN', `entry ${i}`, NOW);
     expect(ledger.recent).toHaveLength(60);

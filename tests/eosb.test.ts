@@ -12,19 +12,19 @@ describe('EOSB / compa-ratio engine', () => {
     expect(gradeMid('M3')).toBe(470400);
   });
 
-  it('tenureYears matches the prototype for all 3 seeded incumbents', () => {
+  it('tenureYears matches the reference for all 3 seeded incumbents', () => {
     expect(tenureYears(mariam, NOW)).toBeCloseTo(5.242984257357974, 10);
     expect(tenureYears(rohan, NOW)).toBeCloseTo(13.875427789185489, 10);
     expect(tenureYears(huda, NOW)).toBeCloseTo(1.267624914442163, 10);
   });
 
-  it('compaRatio matches the prototype for all 3 seeded incumbents', () => {
+  it('compaRatio matches the reference for all 3 seeded incumbents', () => {
     expect(compaRatio(mariam)).toBeCloseTo(0.9736394557823129, 10);
     expect(compaRatio(rohan)).toBeCloseTo(0.9669117647058824, 10);
     expect(compaRatio(huda)).toBeCloseTo(0.9737318840579711, 10);
   });
 
-  it('eosb matches the prototype exactly (crosses the 5-year tier for Mariam and Rohan)', () => {
+  it('eosb matches the reference exactly (crosses the 5-year tier for Mariam and Rohan)', () => {
     expect(eosb(mariam, NOW)).toBe(85714);
     expect(eosb(rohan, NOW)).toBe(244105);
     expect(eosb(huda, NOW)).toBe(9539); // < 5 yrs tenure, 21-day tier only

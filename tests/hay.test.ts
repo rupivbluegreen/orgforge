@@ -40,7 +40,7 @@ describe('HayEngine.evaluate — STREAMS fix', () => {
     expect(hay.grade).toBe('M2');
   });
 
-  it('Human Resources (Business Support, impact was already C pre-fix) is byte-identical to the legacy prototype output', () => {
+  it('Human Resources (Business Support, impact was already C pre-fix) is byte-identical to the legacy output', () => {
     const legacy = JSON.parse(readFileSync('fixtures/legacy-hay-cost.json', 'utf8'));
     const legacyHR = legacy.find((r: any) => r.department === 'Human Resources');
     const hay = HayEngine.evaluate(findDept('Human Resources'), model);

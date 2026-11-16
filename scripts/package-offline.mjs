@@ -56,7 +56,7 @@ Commit: ${gitCommit()}
 This is a compiled, offline-safe build of the core calculation
 engines (Hay, Cost, Governance, SFIA, EOSB, Rewards, Rationale,
 JD, Ledger, Spine, RBAC, LLM gateway) from the Orgforge
-ported from the original prototype.
+ported from the original implementation.
 
 ## Integrity
 

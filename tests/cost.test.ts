@@ -43,7 +43,7 @@ describe('CostEngine.deptCTC — STREAMS fix downstream effect', () => {
     expect(ctc).not.toBe(legacy.ctc);
   });
 
-  it('Human Resources CTC is unchanged from the legacy prototype output', () => {
+  it('Human Resources CTC is unchanged from the legacy output', () => {
     const hr = findDept('Human Resources');
     const hay = HayEngine.evaluate(hr, model);
     const ctc = CostEngine.deptCTC(hr, hay.total);
