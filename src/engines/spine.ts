@@ -1,8 +1,8 @@
 import type { Ledger } from './ledger';
 import { fmtAED } from './format';
 
-// real ORDS is a drop-in SpineAPI swap
-export const SPINE_BASE_PATH = '/ords/hr/orgstudio/v1';
+// real REST API is a drop-in SpineAPI swap
+export const SPINE_BASE_PATH = '/api/hr/orgforge/v1';
 
 export interface OrgChangePayload {
   entityType: string;
@@ -48,7 +48,7 @@ export interface SpineAPI {
 }
 
 // Mocked: logs to ledger, returns MOCK_OK + txId.
-export class MockOracleSpine implements SpineAPI {
+export class MockHrisSpine implements SpineAPI {
   constructor(private readonly ledger: Ledger) {}
 
   async readOrgSnapshot(): Promise<null> {

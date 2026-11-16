@@ -70,7 +70,7 @@ export default function OrgChartPane({ model, onMoveDepartment, onMovePerson }: 
       <div id="chartWrap">
         <div id="chart" style={{ transform: `scale(${zoom / 100})` }}>
           <div className="oc-root">
-            <h2>B-Work Bank UAE — Group CEO</h2>
+            <h2>Northwind Group UAE — Group CEO</h2>
             <div className="m">{fmtN(totals.hc)} HC · {totals.divisions} divisions · {totals.departments} departments · {fmtAED(totals.ctc)} annual CTC</div>
           </div>
           <div className="oc-trunk" />

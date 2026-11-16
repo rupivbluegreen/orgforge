@@ -12,7 +12,7 @@ export const LEVEL_VERB: Record<number, string> = {
 };
 
 export const LEVEL_QUAL: Record<number, string> = {
-  1: 'High school diploma; banking foundation certificate preferred.',
+  1: 'High school diploma; sector foundation certificate preferred.',
   2: "Diploma or Bachelor's degree in Business, Finance or a related field.",
   3: "Bachelor's degree in Business, Finance or a related field.",
   4: "Bachelor's degree in a relevant discipline; professional certification preferred.",
@@ -23,22 +23,22 @@ export const LEVEL_QUAL: Record<number, string> = {
 
 export const LEVEL_EXP: Record<number, string> = {
   1: '0–2 years of relevant experience.',
-  2: '2–4 years of relevant experience in banking or financial services.',
+  2: '2–4 years of relevant experience in financial services.',
   3: '4–6 years of progressive experience in the functional domain.',
   4: '6–8 years of experience with demonstrated ownership of end-to-end processes.',
   5: '8–12 years of experience including team leadership and cross-functional delivery.',
-  6: '12–15 years of experience with sustained leadership of a functional area in banking.',
-  7: '15+ years including senior leadership of a division-scale mandate in banking.',
+  6: '12–15 years of experience with sustained leadership of a functional area in financial services.',
+  7: '15+ years including senior leadership of a division-scale mandate in financial services.',
 };
 
 export const DIV_GOALS: Record<string, string> = {
   'Support Functions': 'enterprise enablement, governance and shared-service excellence',
-  'Retail Banking Group': 'retail customer acquisition, deepening and digital-first distribution',
-  'Corporate & Institutional Banking': 'wholesale client coverage, financing and transaction-banking growth',
+  'Consumer Business Group': 'retail customer acquisition, deepening and digital-first distribution',
+  'Corporate & Institutional Services': 'wholesale client coverage, financing and transaction-services growth',
   'Treasury & Global Markets': 'balance-sheet optimisation, market-making and investment performance',
   'Risk Management Group': 'independent risk oversight and portfolio quality across the enterprise',
   'Operations & Technology': 'resilient, scalable, straight-through operations and technology platforms',
-  'Digital Banking & Innovation': 'digital product innovation, ecosystem partnerships and customer experience leadership',
+  'Digital & Innovation': 'digital product innovation, ecosystem partnerships and customer experience leadership',
 };
 
 export const COMMS: Record<string, { int: string; ext: string }> = {
@@ -48,7 +48,7 @@ export const COMMS: Record<string, { int: string; ext: string }> = {
   },
   'Risk & Control Functions': {
     int: 'Business lines, Internal Audit, Legal, Finance and executive risk committees',
-    ext: 'Central Bank of the UAE and other regulators, external auditors, rating agencies and law-enforcement liaison',
+    ext: 'Sector regulators, external auditors, rating agencies and law-enforcement liaison',
   },
   'Technology & Digital': {
     int: 'Business product owners, Operations, Information Security, Data and Enterprise Architecture',
@@ -56,7 +56,7 @@ export const COMMS: Record<string, { int: string; ext: string }> = {
   },
   Operations: {
     int: 'Front-office units, Technology, Risk, Finance and customer-service teams',
-    ext: 'Correspondent banks, payment networks and schemes, vendors and service providers',
+    ext: 'Correspondent institutions, payment networks and schemes, vendors and service providers',
   },
   'Business Support': {
     int: 'All divisions, executive management and functional leadership teams',
@@ -102,7 +102,7 @@ export function draftJdNarrative(input: JdNarrativeInput): JdNarrative {
 
   const objective = isHead
     ? `Lead the ${role.dept} unit (${deptHc} FTE) within the ${role.sub} stream of ${role.div}, holding end-to-end accountability for its operating plan, people, controls and cost base (${fmtAED(deptBase)} annual base), so that the unit delivers measurably against the division's agenda of ${goals}. The role carries ${st.impactLbl.toLowerCase()} impact on end results and is evaluated at ${hayTotal} Hay points (${grade}).`
-    : `${LEVEL_VERB[L]} the ${role.label.toLowerCase()} agenda within ${role.dept} (${role.sub}, ${role.div}), applying SFIA level-${L} proficiency in ${techList[0]?.name.toLowerCase() || 'the core discipline'} to advance the division's objective of ${goals}, within the bank's risk appetite, Sharia/regulatory requirements where applicable, and service standards.`;
+    : `${LEVEL_VERB[L]} the ${role.label.toLowerCase()} agenda within ${role.dept} (${role.sub}, ${role.div}), applying SFIA level-${L} proficiency in ${techList[0]?.name.toLowerCase() || 'the core discipline'} to advance the division's objective of ${goals}, within the company's risk appetite, Sharia/regulatory requirements where applicable, and service standards.`;
 
   const acc: string[] = [];
   if (isHead) {
@@ -115,9 +115,9 @@ export function draftJdNarrative(input: JdNarrativeInput): JdNarrative {
   acc.push(
     role.sub === 'Risk & Control Functions'
       ? `Maintain an effective control environment: policies, RCSAs, regulatory obligations and audit-issue closure, escalating breaches without delay.`
-      : `Operate within the bank's control framework — first-line risk ownership, RCSA participation, timely closure of audit and compliance actions.`
+      : `Operate within the company's control framework — first-line risk ownership, RCSA participation, timely closure of audit and compliance actions.`
   );
-  acc.push(`Keep position, transaction and employee data current in Oracle Fusion (the system of record); adopt approved AI-assisted workflows and contribute improvement ideas through the continuous-improvement channel.`);
+  acc.push(`Keep position, transaction and employee data current in the HRIS (the system of record); adopt approved AI-assisted workflows and contribute improvement ideas through the continuous-improvement channel.`);
   if (accImpact === 'P') {
     acc.push(`Carry prime accountability for the unit's financial results, with direct influence on revenue and client outcomes in the ${role.div} P&L.`);
   }

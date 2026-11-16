@@ -24,7 +24,7 @@ describe('buildJobDescription — Head of Legal (real dept, hand-verified)', () 
     techList: [
       { code: 'RSKM', name: 'Risk management', cat: 'Governance, risk and compliance', lvl: 5 },
       { code: 'GOVN', name: 'Governance', cat: 'Governance, risk and compliance', lvl: 5 },
-      { code: 'AMLC', name: 'AML / sanctions compliance', cat: 'Banking extension', lvl: 5 },
+      { code: 'AMLC', name: 'AML / sanctions compliance', cat: 'Finance extension', lvl: 5 },
       { code: 'DAAN', name: 'Data analytics', cat: 'Data and analytics', lvl: 4 },
     ],
     behList: [{ code: 'DECM', name: 'Decision-making', lvl: 6 }],
@@ -45,9 +45,9 @@ describe('buildJobDescription — Head of Legal (real dept, hand-verified)', () 
     expect(jd.total_reports).toBe('41');
   });
 
-  it('job_skills lists top-4 SFIA skills plus the Oracle Fusion boilerplate', () => {
+  it('job_skills lists top-4 SFIA skills plus the the HRIS boilerplate', () => {
     expect(jd.job_skills).toBe(
-      'Risk management, Governance, AML / sanctions compliance, Data analytics, and working fluency in Oracle Fusion HCM / core banking platforms relevant to the unit.'
+      'Risk management, Governance, AML / sanctions compliance, Data analytics, and working fluency in the HRIS and core platforms relevant to the unit.'
     );
   });
 
@@ -57,7 +57,7 @@ describe('buildJobDescription — Head of Legal (real dept, hand-verified)', () 
 
   it('comms and qualification/experience come from the level/stream tables', () => {
     expect(jd.internal_comms).toContain('Internal Audit, Legal, Finance');
-    expect(jd.external_comms).toContain('Central Bank of the UAE');
+    expect(jd.external_comms).toContain('Sector regulators');
     expect(jd.min_qualifications).toContain("Bachelor's degree required");
     expect(jd.min_experience).toBe('8–12 years of experience including team leadership and cross-functional delivery.');
   });

@@ -6,7 +6,7 @@ describe('draftRationale — (Legal, control-function independence move)', () =>
   const ctx: RationaleContext = {
     entity: 'Legal', entityType: 'department', hc: 41, cost: 7562000,
     from: { division: 'Support Functions', subdivision: 'Risk & Control Functions' },
-    to: { division: 'Retail Banking Group', subdivision: 'Front Office & Distribution' },
+    to: { division: 'Consumer Business Group', subdivision: 'Front Office & Distribution' },
     toDivHC: 1280,
     hayBefore: { total: 865, grade: 'M2', kh: { pts: 460 }, acc: { pts: 230 } },
     hayAfter: { total: 900, grade: 'M2', kh: { pts: 460 }, acc: { pts: 264 } },

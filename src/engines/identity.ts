@@ -1,6 +1,6 @@
 import type { Persona } from './rbac';
 
-// SSO seam. No real IdP for this bank.
+// SSO seam. No real IdP in this build.
 export interface AuthenticatedIdentity {
   userId: string;
   displayName: string;

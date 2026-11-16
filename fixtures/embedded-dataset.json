@@ -56,93 +56,93 @@
     "base": 7119000
   },
   {
-    "division": "Retail Banking Group",
+    "division": "Consumer Business Group",
     "subdivision": "Front Office & Distribution",
     "department": "Branch Network",
     "hc": 213,
     "base": 31647000
   },
   {
-    "division": "Retail Banking Group",
+    "division": "Consumer Business Group",
     "subdivision": "Front Office & Distribution",
-    "department": "Personal Banking Products",
+    "department": "Personal Products",
     "hc": 232,
     "base": 31137000
   },
   {
-    "division": "Retail Banking Group",
+    "division": "Consumer Business Group",
     "subdivision": "Front Office & Distribution",
     "department": "Cards & Payments",
     "hc": 222,
     "base": 29226000
   },
   {
-    "division": "Retail Banking Group",
+    "division": "Consumer Business Group",
     "subdivision": "Front Office & Distribution",
-    "department": "Wealth & Priority Banking",
+    "department": "Wealth & Priority Services",
     "hc": 218,
     "base": 29376000
   },
   {
-    "division": "Retail Banking Group",
+    "division": "Consumer Business Group",
     "subdivision": "Front Office & Distribution",
-    "department": "Islamic Banking (Retail)",
+    "department": "Islamic Finance (Retail)",
     "hc": 188,
     "base": 25992000
   },
   {
-    "division": "Retail Banking Group",
+    "division": "Consumer Business Group",
     "subdivision": "Front Office & Distribution",
     "department": "Mortgages & Auto Finance",
     "hc": 223,
     "base": 32422000
   },
   {
-    "division": "Retail Banking Group",
+    "division": "Consumer Business Group",
     "subdivision": "Operations",
     "department": "Contact Centre",
     "hc": 206,
     "base": 27167000
   },
   {
-    "division": "Corporate & Institutional Banking",
+    "division": "Corporate & Institutional Services",
     "subdivision": "Front Office & Distribution",
     "department": "Corporate Coverage",
     "hc": 86,
     "base": 17495000
   },
   {
-    "division": "Corporate & Institutional Banking",
+    "division": "Corporate & Institutional Services",
     "subdivision": "Front Office & Distribution",
     "department": "Trade Finance",
     "hc": 101,
     "base": 19646000
   },
   {
-    "division": "Corporate & Institutional Banking",
+    "division": "Corporate & Institutional Services",
     "subdivision": "Front Office & Distribution",
-    "department": "Cash Management & Transaction Banking",
+    "department": "Cash Management & Transactions",
     "hc": 93,
     "base": 19232000
   },
   {
-    "division": "Corporate & Institutional Banking",
+    "division": "Corporate & Institutional Services",
     "subdivision": "Front Office & Distribution",
     "department": "Financial Institutions",
     "hc": 94,
     "base": 19909000
   },
   {
-    "division": "Corporate & Institutional Banking",
+    "division": "Corporate & Institutional Services",
     "subdivision": "Front Office & Distribution",
     "department": "Project & Structured Finance",
     "hc": 113,
     "base": 23879000
   },
   {
-    "division": "Corporate & Institutional Banking",
+    "division": "Corporate & Institutional Services",
     "subdivision": "Front Office & Distribution",
-    "department": "SME Banking",
+    "department": "SME Services",
     "hc": 93,
     "base": 16336000
   },
@@ -247,7 +247,7 @@
   {
     "division": "Operations & Technology",
     "subdivision": "Technology & Digital",
-    "department": "Core Banking Applications",
+    "department": "Core Platform Applications",
     "hc": 128,
     "base": 16634000
   },
@@ -266,35 +266,35 @@
     "base": 21971000
   },
   {
-    "division": "Digital Banking & Innovation",
+    "division": "Digital & Innovation",
     "subdivision": "Front Office & Distribution",
     "department": "Digital Channels",
     "hc": 45,
     "base": 7414000
   },
   {
-    "division": "Digital Banking & Innovation",
+    "division": "Digital & Innovation",
     "subdivision": "Front Office & Distribution",
-    "department": "Mobile Banking Products",
+    "department": "Mobile Products",
     "hc": 53,
     "base": 8927000
   },
   {
-    "division": "Digital Banking & Innovation",
+    "division": "Digital & Innovation",
     "subdivision": "Technology & Digital",
-    "department": "Open Banking & APIs",
+    "department": "Open Platform & APIs",
     "hc": 68,
     "base": 11264000
   },
   {
-    "division": "Digital Banking & Innovation",
+    "division": "Digital & Innovation",
     "subdivision": "Front Office & Distribution",
     "department": "Fintech Partnerships",
     "hc": 62,
     "base": 11498000
   },
   {
-    "division": "Digital Banking & Innovation",
+    "division": "Digital & Innovation",
     "subdivision": "Technology & Digital",
     "department": "Customer Experience Design",
     "hc": 62,

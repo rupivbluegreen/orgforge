@@ -104,7 +104,7 @@
     "ctc": 17365918
   },
   {
-    "division": "Retail Banking Group",
+    "division": "Consumer Business Group",
     "subdivision": "Front Office & Distribution",
     "department": "Branch Network",
     "hay": {
@@ -117,9 +117,9 @@
     "ctc": 45813729
   },
   {
-    "division": "Retail Banking Group",
+    "division": "Consumer Business Group",
     "subdivision": "Front Office & Distribution",
-    "department": "Personal Banking Products",
+    "department": "Personal Products",
     "hay": {
       "kh": 608,
       "ps": 264,
@@ -130,7 +130,7 @@
     "ctc": 45096159
   },
   {
-    "division": "Retail Banking Group",
+    "division": "Consumer Business Group",
     "subdivision": "Front Office & Distribution",
     "department": "Cards & Payments",
     "hay": {
@@ -143,9 +143,9 @@
     "ctc": 42407382
   },
   {
-    "division": "Retail Banking Group",
+    "division": "Consumer Business Group",
     "subdivision": "Front Office & Distribution",
-    "department": "Wealth & Priority Banking",
+    "department": "Wealth & Priority Services",
     "hay": {
       "kh": 608,
       "ps": 264,
@@ -156,9 +156,9 @@
     "ctc": 42618432
   },
   {
-    "division": "Retail Banking Group",
+    "division": "Consumer Business Group",
     "subdivision": "Front Office & Distribution",
-    "department": "Islamic Banking (Retail)",
+    "department": "Islamic Finance (Retail)",
     "hay": {
       "kh": 608,
       "ps": 264,
@@ -169,7 +169,7 @@
     "ctc": 37857144
   },
   {
-    "division": "Retail Banking Group",
+    "division": "Consumer Business Group",
     "subdivision": "Front Office & Distribution",
     "department": "Mortgages & Auto Finance",
     "hay": {
@@ -182,7 +182,7 @@
     "ctc": 46904154
   },
   {
-    "division": "Retail Banking Group",
+    "division": "Consumer Business Group",
     "subdivision": "Operations",
     "department": "Contact Centre",
     "hay": {
@@ -195,7 +195,7 @@
     "ctc": 39432220
   },
   {
-    "division": "Corporate & Institutional Banking",
+    "division": "Corporate & Institutional Services",
     "subdivision": "Front Office & Distribution",
     "department": "Corporate Coverage",
     "hay": {
@@ -208,7 +208,7 @@
     "ctc": 26896507
   },
   {
-    "division": "Corporate & Institutional Banking",
+    "division": "Corporate & Institutional Services",
     "subdivision": "Front Office & Distribution",
     "department": "Trade Finance",
     "hay": {
@@ -221,9 +221,9 @@
     "ctc": 30113391
   },
   {
-    "division": "Corporate & Institutional Banking",
+    "division": "Corporate & Institutional Services",
     "subdivision": "Front Office & Distribution",
-    "department": "Cash Management & Transaction Banking",
+    "department": "Cash Management & Transactions",
     "hay": {
       "kh": 528,
       "ps": 200,
@@ -234,7 +234,7 @@
     "ctc": 29456845
   },
   {
-    "division": "Corporate & Institutional Banking",
+    "division": "Corporate & Institutional Services",
     "subdivision": "Front Office & Distribution",
     "department": "Financial Institutions",
     "hay": {
@@ -247,7 +247,7 @@
     "ctc": 30454743
   },
   {
-    "division": "Corporate & Institutional Banking",
+    "division": "Corporate & Institutional Services",
     "subdivision": "Front Office & Distribution",
     "department": "Project & Structured Finance",
     "hay": {
@@ -260,9 +260,9 @@
     "ctc": 36352833
   },
   {
-    "division": "Corporate & Institutional Banking",
+    "division": "Corporate & Institutional Services",
     "subdivision": "Front Office & Distribution",
-    "department": "SME Banking",
+    "department": "SME Services",
     "hay": {
       "kh": 528,
       "ps": 200,
@@ -457,7 +457,7 @@
   {
     "division": "Operations & Technology",
     "subdivision": "Technology & Digital",
-    "department": "Core Banking Applications",
+    "department": "Core Platform Applications",
     "hay": {
       "kh": 528,
       "ps": 230,
@@ -494,7 +494,7 @@
     "ctc": 34119616
   },
   {
-    "division": "Digital Banking & Innovation",
+    "division": "Digital & Innovation",
     "subdivision": "Front Office & Distribution",
     "department": "Digital Channels",
     "hay": {
@@ -507,9 +507,9 @@
     "ctc": 12330305
   },
   {
-    "division": "Digital Banking & Innovation",
+    "division": "Digital & Innovation",
     "subdivision": "Front Office & Distribution",
-    "department": "Mobile Banking Products",
+    "department": "Mobile Products",
     "hay": {
       "kh": 400,
       "ps": 152,
@@ -520,7 +520,7 @@
     "ctc": 14641564
   },
   {
-    "division": "Digital Banking & Innovation",
+    "division": "Digital & Innovation",
     "subdivision": "Front Office & Distribution",
     "department": "Fintech Partnerships",
     "hay": {
@@ -533,9 +533,9 @@
     "ctc": 18609062
   },
   {
-    "division": "Digital Banking & Innovation",
+    "division": "Digital & Innovation",
     "subdivision": "Technology & Digital",
-    "department": "Open Banking & APIs",
+    "department": "Open Platform & APIs",
     "hay": {
       "kh": 460,
       "ps": 175,
@@ -546,7 +546,7 @@
     "ctc": 18235202
   },
   {
-    "division": "Digital Banking & Innovation",
+    "division": "Digital & Innovation",
     "subdivision": "Technology & Digital",
     "department": "Customer Experience Design",
     "hay": {

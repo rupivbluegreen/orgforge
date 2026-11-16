@@ -21,8 +21,8 @@ const PATHS = {
   employeeSkills: (id: string) => `/employees/${encodeURIComponent(id)}/skills`,
 };
 
-// real ORDS, a Mock drop-in
-export class RealOracleSpine implements SpineAPI {
+// real REST API, a Mock drop-in
+export class RealHrisSpine implements SpineAPI {
   constructor(private readonly config: RealSpineConfig) {}
 
   private async request<T>(path: string, init: RequestInit): Promise<T> {

@@ -99,7 +99,7 @@ export default function JdStudioPane({ model }: JdStudioPaneProps) {
     <section className="tabpane active">
       <div id="jdLayout">
         <div className="card">
-          <div className="chead"><h3>Positions (Oracle Hierarchy)</h3><span className="mini">{roles.length} JDs</span></div>
+          <div className="chead"><h3>Positions (HRIS Hierarchy)</h3><span className="mini">{roles.length} JDs</span></div>
           <div id="roleTree">
             {model.divisions.map((div) => (
               <div key={div.name}>

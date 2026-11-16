@@ -9,11 +9,11 @@ export interface PerfScaleEntry {
 
 // Rating scale, behavioural anchors
 export const PERF_SCALE: PerfScaleEntry[] = [
-  { rating: 1, label: 'Unsatisfactory', anchor: 'Consistently misses agreed objectives and role standards despite feedback; behaviours fall short of bank values or control expectations.', route: 'PIP — 90 days, defined exit criteria. No merit; variable pay withheld.' },
+  { rating: 1, label: 'Unsatisfactory', anchor: 'Consistently misses agreed objectives and role standards despite feedback; behaviours fall short of company values or control expectations.', route: 'PIP — 90 days, defined exit criteria. No merit; variable pay withheld.' },
   { rating: 2, label: 'Developing', anchor: 'Meets some but not all objectives; capability or behavioural gaps limit full delivery of the role.', route: 'Development plan toward rating 3 (12 months). Reduced merit.' },
   { rating: 3, label: 'Solid Performer', anchor: 'Fully meets the objectives and standards of the role; reliable delivery within own scope; competent against the SFIA profile.', route: 'Development plan toward rating 4 — broaden scope, raise impact. Standard merit.' },
-  { rating: 4, label: 'Exceeds Expectations', anchor: 'Consistently delivers beyond agreed objectives; visibly lifts team or cross-functional outcomes; role-models bank values.', route: 'Development plan toward rating 5 — enterprise impact, succession readiness. Above-standard merit; talent pool.' },
-  { rating: 5, label: 'Outstanding', anchor: 'Exceptional, sustained impact well beyond the role; shapes results at department or bank level; benchmark for others.', route: 'Sustain-and-stretch plan; succession slating for critical roles; top-quartile merit and bonus.' },
+  { rating: 4, label: 'Exceeds Expectations', anchor: 'Consistently delivers beyond agreed objectives; visibly lifts team or cross-functional outcomes; role-models company values.', route: 'Development plan toward rating 5 — enterprise impact, succession readiness. Above-standard merit; talent pool.' },
+  { rating: 5, label: 'Outstanding', anchor: 'Exceptional, sustained impact well beyond the role; shapes results at department or company level; benchmark for others.', route: 'Sustain-and-stretch plan; succession slating for critical roles; top-quartile merit and bonus.' },
 ];
 
 export const PERF_GUIDE: Record<PerfRating, number> = { 1: 5, 2: 15, 3: 50, 4: 22, 5: 8 };

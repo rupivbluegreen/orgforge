@@ -53,11 +53,11 @@ describe('bucketOf / equityHeatMap', () => {
 
   it('aggregates avg compa-ratio per division × bucket, null for empty cells', () => {
     const records = people.map((person) => ({ person, divisionName: 'Support Functions' }));
-    const heat = equityHeatMap(records, ['Support Functions', 'Retail Banking Group']);
+    const heat = equityHeatMap(records, ['Support Functions', 'Consumer Business Group']);
     const m3Cell = heat.find((c) => c.divisionName === 'Support Functions' && c.bucket === 'M/E')!;
     expect(m3Cell.avgCompaRatio).toBeCloseTo(0.9736394557823129, 10);
     expect(m3Cell.count).toBe(1);
-    const emptyCell = heat.find((c) => c.divisionName === 'Retail Banking Group' && c.bucket === 'C')!;
+    const emptyCell = heat.find((c) => c.divisionName === 'Consumer Business Group' && c.bucket === 'C')!;
     expect(emptyCell.avgCompaRatio).toBeNull();
     expect(emptyCell.count).toBe(0);
   });

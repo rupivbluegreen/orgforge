@@ -42,7 +42,7 @@ export function draftRationale(ctx: RationaleContext): RationaleDraft {
 
   const fr = [
     `Post-move, ${ctx.entity} reports through the ${ctx.to.subdivision} leadership line of ${ctx.to.division}. Know-How requirements ${ctx.hayAfter.kh.pts > ctx.hayBefore.kh.pts ? 'broaden with the wider divisional span' : 'remain anchored in the existing technical depth'} (${ctx.hayBefore.kh.pts} → ${ctx.hayAfter.kh.pts} pts), while Accountability moves from a ${frSt.impactLbl.toLowerCase()} to a ${toSt.impactLbl.toLowerCase()} impact posture (${ctx.hayBefore.acc.pts} → ${ctx.hayAfter.acc.pts} pts).`,
-    `Consequential actions have been executed automatically: the job descriptions of every affected position have been regenerated in JD Studio (see tab 03), incumbents should be validated against the ${ctx.hayAfter.grade} band, and the Oracle spine position hierarchy has been updated.`,
+    `Consequential actions have been executed automatically: the job descriptions of every affected position have been regenerated in JD Studio (see tab 03), incumbents should be validated against the ${ctx.hayAfter.grade} band, and the HRIS spine position hierarchy has been updated.`,
   ].join('\n\n');
 
   return { business_rationale: br, fitment_rationale: fr };

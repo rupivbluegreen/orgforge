@@ -28,9 +28,9 @@ const GRADE_LADDER = [[1850, 'E1'], [1500, 'E2'], [1180, 'E3'], [920, 'M1'], [78
 const gradeFor = (pts) => GRADE_LADDER.find(([min]) => pts >= min)[1];
 const CTC_MULTIPLE = 1.34;
 const DIV_PREMIUM = {
-  'Support Functions': 1.00, 'Retail Banking Group': 1.05, 'Corporate & Institutional Banking': 1.10,
+  'Support Functions': 1.00, 'Consumer Business Group': 1.05, 'Corporate & Institutional Services': 1.10,
   'Treasury & Global Markets': 1.15, 'Risk Management Group': 1.08, 'Operations & Technology': 1.12,
-  'Digital Banking & Innovation': 1.14,
+  'Digital & Innovation': 1.14,
 };
 const headAnnual = (hayTotal) => Math.round((38000 + (hayTotal || 0) * 30) * 12);
 
@@ -96,8 +96,8 @@ for (const div of divisions) {
 const expectedAffected = new Set([
   'Legal', 'Compliance & AML', 'Internal Audit', 'Credit Risk', 'Market & Liquidity Risk',
   'Operational Risk', 'Fraud Risk & Investigations', 'Model Risk & Analytics',
-  'IT Infrastructure & Cloud', 'Core Banking Applications', 'Cyber & Information Security',
-  'Data & Analytics', 'Open Banking & APIs', 'Customer Experience Design',
+  'IT Infrastructure & Cloud', 'Core Platform Applications', 'Cyber & Information Security',
+  'Data & Analytics', 'Open Platform & APIs', 'Customer Experience Design',
 ]);
 const gradeChanges = changed.filter((r) => r.before.grade !== r.after.grade);
 

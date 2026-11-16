@@ -19,11 +19,11 @@ function modelWithSpan(subdivisionName: string, divisionName: string, count: num
 
 describe('assessDepartmentMove — department rules', () => {
   it('Legal (Risk & Control Functions) into Front Office & Distribution → HUMAN, cites control-function independence, no "undefined" text', () => {
-    const model = modelWithSpan('Front Office & Distribution', 'Retail Banking Group', 6);
+    const model = modelWithSpan('Front Office & Distribution', 'Consumer Business Group', 6);
     const mv: DepartmentMoveInput = {
       entityType: 'department', entity: 'Legal',
       from: { division: 'Support Functions', subdivision: 'Risk & Control Functions' },
-      to: { division: 'Retail Banking Group', subdivision: 'Front Office & Distribution' },
+      to: { division: 'Consumer Business Group', subdivision: 'Front Office & Distribution' },
       hayBefore: { total: 865, grade: 'M2' }, hayAfter: { total: 865, grade: 'M2' },
     };
     const out = assessDepartmentMove(mv, model);
@@ -71,11 +71,11 @@ describe('assessDepartmentMove — department rules', () => {
   });
 
   it('clean cross-stream move between two non-R streams stays VALID with readable label text', () => {
-    const model = modelWithSpan('Front Office & Distribution', 'Retail Banking Group', 6);
+    const model = modelWithSpan('Front Office & Distribution', 'Consumer Business Group', 6);
     const mv: DepartmentMoveInput = {
       entityType: 'department', entity: 'Strategy & Transformation',
       from: { division: 'Support Functions', subdivision: 'Business Support' },
-      to: { division: 'Retail Banking Group', subdivision: 'Front Office & Distribution' },
+      to: { division: 'Consumer Business Group', subdivision: 'Front Office & Distribution' },
       hayBefore: { total: 460, grade: 'P2' }, hayAfter: { total: 460, grade: 'P2' },
     };
     const out = assessDepartmentMove(mv, model);

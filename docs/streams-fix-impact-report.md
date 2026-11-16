@@ -15,8 +15,8 @@ Source: streams taxonomy fix (Risk & Control Functions 'S'→'R', Technology & D
 | Fraud Risk & Investigations | Risk & Control Functions | M1→M2 | 958→903 | 18,095,146→18,068,614 |
 | Model Risk & Analytics | Risk & Control Functions | M2→M2 | 865→810 | 16,892,522→16,865,990 |
 | IT Infrastructure & Cloud | Technology & Digital | M1→M1 | 1108→1062 | 31,941,955→31,919,765 |
-| Core Banking Applications | Technology & Digital | M1→M1 | 1108→1062 | 26,109,846→26,087,656 |
+| Core Platform Applications | Technology & Digital | M1→M1 | 1108→1062 | 26,109,846→26,087,656 |
 | Cyber & Information Security | Technology & Digital | M1→M1 | 1108→1062 | 28,251,488→28,229,298 |
 | Data & Analytics | Technology & Digital | M1→M1 | 1108→1062 | 34,119,616→34,097,426 |
-| Open Banking & APIs | Technology & Digital | M2→M2 | 865→835 | 18,235,202→18,220,730 |
+| Open Platform & APIs | Technology & Digital | M2→M2 | 865→835 | 18,235,202→18,220,730 |
 | Customer Experience Design | Technology & Digital | M2→M2 | 865→835 | 17,109,361→17,094,889 |

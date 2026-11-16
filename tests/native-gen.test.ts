@@ -146,22 +146,22 @@ describe('draftScenarioNarrative', () => {
 describe('analyzeSentiment', () => {
   it('matches the independently-verified themes and per-division averages', () => {
     const text = analyzeSentiment([
-      { div: 'Retail Banking Group', text: 'Workload is heavy and management is micromanaging us, feels unfair and I want to quit.' },
-      { div: 'Retail Banking Group', text: 'Pay is under market and I am stuck with no promotion path.' },
+      { div: 'Consumer Business Group', text: 'Workload is heavy and management is micromanaging us, feels unfair and I want to quit.' },
+      { div: 'Consumer Business Group', text: 'Pay is under market and I am stuck with no promotion path.' },
       { div: 'Technology & Digital', text: 'Great flexible culture, love the support from my manager, systems are excellent.' },
     ]);
     expect(text).toContain('SURVEY SENTIMENT ANALYSIS — 3 comments');
     expect(text).toContain('• Manager: 2');
-    expect(text).toContain('• Retail Banking Group: -3.00 (2 comments)  ⚠ RETENTION RISK');
+    expect(text).toContain('• Consumer Business Group: -3.00 (2 comments)  ⚠ RETENTION RISK');
     expect(text).toContain('• Technology & Digital: 5.00 (1 comments)');
-    expect(text).toContain('Retail Banking Group shows the weakest sentiment');
+    expect(text).toContain('Consumer Business Group shows the weakest sentiment');
   });
 });
 
 describe('draftLetter', () => {
   it('Offer Letter includes salary, division, department and UAE law reference', () => {
     const text = draftLetter(mariamCtx, 'Offer Letter', NOW);
-    expect(text).toContain('B-WORK BANK (UAE) — HUMAN RESOURCES');
+    expect(text).toContain('NORTHWIND GROUP (UAE) — HUMAN RESOURCES');
     expect(text).toContain('Date: 2026-09-22');
     expect(text).toContain('Dear Mariam Khalifa,');
     expect(text).toContain('Team Manager (Grade M3) in Legal, Support Functions');

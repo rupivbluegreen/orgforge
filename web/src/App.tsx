@@ -17,7 +17,7 @@ import WorkforcePane from './Workforce';
 import PerformancePane from './Performance';
 import AiCopilotPane from './AiCopilot';
 import { Ledger } from '../../src/engines/ledger';
-import { MockOracleSpine } from '../../src/engines/spine';
+import { MockHrisSpine } from '../../src/engines/spine';
 import { fmtAED, fmtN } from '../../src/engines/format';
 import { captureScenario } from '../../src/engines/workforce';
 import type { ScenarioSnapshot } from '../../src/engines/workforce';
@@ -69,7 +69,7 @@ export default function App() {
   const [scenarios, setScenarios] = useState<{ A: ScenarioSlot | null; B: ScenarioSlot | null }>({ A: null, B: null });
 
   const ledgerRef = useRef(new Ledger());
-  const spineRef = useRef(new MockOracleSpine(ledgerRef.current));
+  const spineRef = useRef(new MockHrisSpine(ledgerRef.current));
   const baselineRef = useRef(orgTotals(model));
   const deptBaselineRef = useRef(captureDeptBaseline(model));
 
@@ -175,7 +175,7 @@ export default function App() {
     setHistory([]);
     ledgerRef.current.log('write', 'ORA-WRITE', 'scenario committed — spine baseline re-approved at current design');
     setLedgerVersion((v) => v + 1);
-    showToast('Current design committed to Oracle spine — new approved baseline');
+    showToast('Current design committed to HRIS spine — new approved baseline');
   }
 
   function handleRatingChange(personId: string, newRating: PerfRating) {
@@ -214,7 +214,7 @@ export default function App() {
           <h1>Orgforge</h1>
           <div className="sub">Org Design · Hay Evaluation · SFIA 10 · AI Job Descriptions</div>
         </div>
-        <div className="spinechip"><span id="spinePip" /> ORACLE SPINE · HCM CORE (mocked)</div>
+        <div className="spinechip"><span id="spinePip" /> HRIS SPINE · HCM CORE (mocked)</div>
         <div className="spacer" />
         <button className="hbtn" onClick={handleUndo} disabled={!history.length}>
           ↶ Undo move
@@ -399,7 +399,7 @@ export default function App() {
 
         <aside className="rail">
           <div className="card" id="ledgerWrap" style={{ display: 'flex', flexDirection: 'column' }}>
-            <div className="chead"><h3>Oracle Spine Ledger</h3><span className="mini">{ledgerRef.current.transactionCount} tx</span></div>
+            <div className="chead"><h3>HRIS Spine Ledger</h3><span className="mini">{ledgerRef.current.transactionCount} tx</span></div>
             <div id="ledger">
               {ledgerEntries.length === 0 && <p className="empty">No spine activity yet.</p>}
               {ledgerEntries.map((e, i) => (

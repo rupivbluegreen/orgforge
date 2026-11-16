@@ -97,7 +97,7 @@ export function buildJobDescription(input: JdBuildInput): JobDescription {
 
   const jobSkills =
     techList.slice(0, 4).map((t) => t.name).join(', ') +
-    ', and working fluency in Oracle Fusion HCM / core banking platforms relevant to the unit.';
+    ', and working fluency in the HRIS and core platforms relevant to the unit.';
 
   const structuralContext =
     `${role.div} → ${role.sub} → ${role.dept}` +

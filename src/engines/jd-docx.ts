@@ -52,7 +52,7 @@ export function buildFallbackDocumentXml(jd: JobDescription): string {
     KV('Accountability', d.hay_accountability), KV('Total Hay Points', d.hay_score), KV('Hay Grade', d.hay_grade),
     H('8. GENERATION RECORD'),
     KV('Structural Context', d.structural_context), KV('Generated', `${d.generated_on} — ${d.generated_by}`),
-    P('Oracle Fusion remains the system of record for this position.', { sz: 14, color: '98A2B3', before: 200 }),
+    P('The HRIS remains the system of record for this position.', { sz: 14, color: '98A2B3', before: 200 }),
   ].join('');
   return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>${body}<w:sectPr><w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="1134" w:right="1134" w:bottom="1134" w:left="1134"/></w:sectPr></w:body></w:document>`;
 }

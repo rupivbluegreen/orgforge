@@ -5,12 +5,12 @@ export const CTC_MULTIPLE = 1.34;
 
 export const DIV_PREMIUM: Record<string, number> = {
   'Support Functions': 1.0,
-  'Retail Banking Group': 1.05,
-  'Corporate & Institutional Banking': 1.1,
+  'Consumer Business Group': 1.05,
+  'Corporate & Institutional Services': 1.1,
   'Treasury & Global Markets': 1.15,
   'Risk Management Group': 1.08,
   'Operations & Technology': 1.12,
-  'Digital Banking & Innovation': 1.14,
+  'Digital & Innovation': 1.14,
 };
 
 export interface CostTotals {

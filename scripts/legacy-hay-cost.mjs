@@ -29,9 +29,9 @@ const gradeFor = (pts) => GRADE_LADDER.find(([min]) => pts >= min)[1];
 
 const CTC_MULTIPLE = 1.34;
 const DIV_PREMIUM = {
-  'Support Functions': 1.00, 'Retail Banking Group': 1.05, 'Corporate & Institutional Banking': 1.10,
+  'Support Functions': 1.00, 'Consumer Business Group': 1.05, 'Corporate & Institutional Services': 1.10,
   'Treasury & Global Markets': 1.15, 'Risk Management Group': 1.08, 'Operations & Technology': 1.12,
-  'Digital Banking & Innovation': 1.14,
+  'Digital & Innovation': 1.14,
 };
 const headAnnual = (hayTotal) => Math.round((38000 + (hayTotal || 0) * 30) * 12);
 

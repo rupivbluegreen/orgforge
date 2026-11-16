@@ -6,12 +6,12 @@ const NOW = new Date('2026-09-22T14:30:00.000Z');
 describe('Ledger', () => {
   it('logs an entry with timestamp, kind, op and message', () => {
     const ledger = new Ledger();
-    const entry = ledger.log('write', 'ORA-WRITE', 'org_change department: Legal → Retail Banking Group', NOW);
+    const entry = ledger.log('write', 'ORA-WRITE', 'org_change department: Legal → Consumer Business Group', NOW);
     expect(entry).toEqual({
       timestamp: '2026-09-22T14:30:00.000Z',
       kind: 'write',
       op: 'ORA-WRITE',
-      message: 'org_change department: Legal → Retail Banking Group',
+      message: 'org_change department: Legal → Consumer Business Group',
     });
   });
 

@@ -155,7 +155,7 @@ export default function TalentPane({ model }: TalentPaneProps) {
                 <span className="mono">{fmtAED(r.cost)}</span>
               </div>
             ))}
-            <div style={{ fontSize: 9.5, color: 'var(--mut)', marginTop: 6 }}>Security &amp; data gaps priced at premium rates. Log completions to Oracle Learning to burn down the budget.</div>
+            <div style={{ fontSize: 9.5, color: 'var(--mut)', marginTop: 6 }}>Security &amp; data gaps priced at premium rates. Log completions to the LMS to burn down the budget.</div>
           </div>
         </div>
       </div>

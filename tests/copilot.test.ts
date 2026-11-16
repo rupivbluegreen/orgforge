@@ -140,7 +140,7 @@ describe('findUnits / draftScenario', () => {
 
   it('falls back to org-wide headcount when no units matched but a % is given', () => {
     const text = draftScenario('reduce headcount by 15%', [], 1000);
-    expect(text).toContain('Units in scope: entire bank · combined 1,000 HC.');
+    expect(text).toContain('Units in scope: entire company · combined 1,000 HC.');
     expect(text).toContain('Headcount reduction 15% ≈ 150 roles');
     expect(text).not.toContain('Merger note');
   });

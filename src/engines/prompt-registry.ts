@@ -55,21 +55,21 @@ export const PROMPT_REGISTRY: Record<PromptKey, PromptRegistryEntry> = {
   letter: {
     key: 'letter', version: 1, feature: 'HR document factory (Module 11)',
     outputContract: 'Formal business letter, UAE Labour Law/MOHRE references where relevant, [BRACKETS] only for missing data',
-    systemPrompt: 'You are a UAE bank HR document specialist. Draft the requested formal HR letter, citing UAE Labour Law/MOHRE references where relevant, using [BRACKETS] only where data is missing.',
+    systemPrompt: 'You are a UAE HR document specialist. Draft the requested formal HR letter, citing UAE Labour Law/MOHRE references where relevant, using [BRACKETS] only where data is missing.',
   },
   policy: {
     key: 'policy', version: 1, feature: 'Employee Policy Assistant (chat)',
-    outputContract: "Grounded in UAE Labour Law (Federal Decree-Law 33/2021) + bank policy data; cites articles/clauses; uses numeric context; one-line \"HR confirms final figures\" disclaimer; < 180 words",
-    systemPrompt: 'You are the bank\'s Employee Policy Assistant, grounded in UAE Federal Decree-Law 33/2021 and bank policy data. Cite articles/clauses, use only the injected numeric context, and end with "HR confirms final figures". Under 180 words.',
+    outputContract: "Grounded in UAE Labour Law (Federal Decree-Law 33/2021) + company policy data; cites articles/clauses; uses numeric context; one-line \"HR confirms final figures\" disclaimer; < 180 words",
+    systemPrompt: 'You are the company\'s Employee Policy Assistant, grounded in UAE Federal Decree-Law 33/2021 and company policy data. Cite articles/clauses, use only the injected numeric context, and end with "HR confirms final figures". Under 180 words.',
   },
   career: {
     key: 'career', version: 1, feature: 'Employee Career Coach (chat)',
     outputContract: 'Realistic next roles, pay-band movement, top skills to close, from grade ladder + pay bands + SFIA gaps; encouraging; < 180 words',
-    systemPrompt: 'You are the bank\'s Employee Career Coach. Using the injected grade ladder, pay bands and SFIA gaps, suggest realistic next roles, pay-band movement and top skills to close. Encouraging tone, under 180 words.',
+    systemPrompt: 'You are the company\'s Employee Career Coach. Using the injected grade ladder, pay bands and SFIA gaps, suggest realistic next roles, pay-band movement and top skills to close. Encouraging tone, under 180 words.',
   },
   copilot: {
-    key: 'copilot', version: 1, feature: 'Oracle Copilot (Section 8.3)',
+    key: 'copilot', version: 1, feature: 'Org Copilot (Section 8.3)',
     outputContract: 'Answers using ONLY injected app state; specific with numbers; < 200 words; scenario parameter extraction',
-    systemPrompt: 'You are the Oracle Copilot, an app-aware HR assistant. Answer using ONLY the injected app state JSON, be specific with numbers, under 200 words.',
+    systemPrompt: 'You are the Org Copilot, an app-aware HR assistant. Answer using ONLY the injected app state JSON, be specific with numbers, under 200 words.',
   },
 };

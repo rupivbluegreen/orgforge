@@ -102,7 +102,7 @@ export default function SheetPane({ model, baseline, recalcSeq }: SheetPaneProps
             </tbody>
             <tfoot>
               <tr className="totals">
-                <td>BANK TOTAL — {rows.length} departments</td><td></td>
+                <td>COMPANY TOTAL — {rows.length} departments</td><td></td>
                 <td className="num">{fmtN(totals.hc)}</td><td colSpan={3}></td>
                 <td className="num">{fmtAED(totals.ctc)}</td>
                 <td className={`num ${deltaClass(totals.dCtc)}`}>{totals.dCtc ? fmtDelta(totals.dCtc) : 'at baseline'}</td>

@@ -105,7 +105,7 @@ export default function AiCopilotPane({ model, lastMove, onAsk }: AiCopilotPaneP
   const [generator, setGenerator] = useState<GeneratorKey>('narrative');
   const [personId, setPersonId] = useState(records[0]?.person.id ?? '');
   const [letterDoc, setLetterDoc] = useState<LetterDocType>('Offer Letter');
-  const [freeText, setFreeText] = useState('Senior banking professional, 9 years in corporate credit. Led credit analysis and portfolio risk reviews; built Python dashboards; managed a team of 4 analysts; mentored juniors.');
+  const [freeText, setFreeText] = useState('Senior finance professional, 9 years in corporate credit. Led credit analysis and portfolio risk reviews; built Python dashboards; managed a team of 4 analysts; mentored juniors.');
   const [policyQuestion, setPolicyQuestion] = useState('What is my EOSB after 6 years?');
   const [genOutput, setGenOutput] = useState<string | null>(null);
 
@@ -167,7 +167,7 @@ export default function AiCopilotPane({ model, lastMove, onAsk }: AiCopilotPaneP
       </div>
 
       <div className="card" style={{ marginBottom: 10 }}>
-        <div className="chead"><h3>💬 Oracle Copilot</h3><span className="mini">ask about moves, gaps, re-eval, equity, scenarios, policy…</span></div>
+        <div className="chead"><h3>💬 Org Copilot</h3><span className="mini">ask about moves, gaps, re-eval, equity, scenarios, policy…</span></div>
         <div className="cbody">
           <div style={{ maxHeight: 300, overflow: 'auto', marginBottom: 8, display: 'flex', flexDirection: 'column', gap: 8 }}>
             {messages.length === 0 && <p className="empty">{formatFallbackHelp('ai', null)}</p>}

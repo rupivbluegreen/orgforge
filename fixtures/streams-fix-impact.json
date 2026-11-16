@@ -127,7 +127,7 @@
       }
     },
     {
-      "department": "Core Banking Applications",
+      "department": "Core Platform Applications",
       "subdivision": "Technology & Digital",
       "before": {
         "total": 1108,
@@ -169,7 +169,7 @@
       }
     },
     {
-      "department": "Open Banking & APIs",
+      "department": "Open Platform & APIs",
       "subdivision": "Technology & Digital",
       "before": {
         "total": 865,
@@ -283,7 +283,7 @@
       }
     },
     {
-      "department": "Personal Banking Products",
+      "department": "Personal Products",
       "subdivision": "Front Office & Distribution",
       "before": {
         "total": 1400,
@@ -311,7 +311,7 @@
       }
     },
     {
-      "department": "Wealth & Priority Banking",
+      "department": "Wealth & Priority Services",
       "subdivision": "Front Office & Distribution",
       "before": {
         "total": 1400,
@@ -325,7 +325,7 @@
       }
     },
     {
-      "department": "Islamic Banking (Retail)",
+      "department": "Islamic Finance (Retail)",
       "subdivision": "Front Office & Distribution",
       "before": {
         "total": 1400,
@@ -395,7 +395,7 @@
       }
     },
     {
-      "department": "Cash Management & Transaction Banking",
+      "department": "Cash Management & Transactions",
       "subdivision": "Front Office & Distribution",
       "before": {
         "total": 1032,
@@ -437,7 +437,7 @@
       }
     },
     {
-      "department": "SME Banking",
+      "department": "SME Services",
       "subdivision": "Front Office & Distribution",
       "before": {
         "total": 1032,
@@ -577,7 +577,7 @@
       }
     },
     {
-      "department": "Mobile Banking Products",
+      "department": "Mobile Products",
       "subdivision": "Front Office & Distribution",
       "before": {
         "total": 816,

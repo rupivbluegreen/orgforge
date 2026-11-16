@@ -58,7 +58,7 @@ describe('modelRestructuring', () => {
     expect(row.noticePay).toBe(40000);
     expect(row.eosb).toBe(125380);
     expect(row.redundancyCost).toBe(165380);
-    // Compliance & AML: 1 AMLC gap pt x 4500 (Banking extension) = 4500
+    // Compliance & AML: 1 AMLC gap pt x 4500 (Finance extension) = 4500
     expect(row.bestRedeployment).toEqual({ deptName: 'Compliance & AML', cost: 4500, gapPts: 1 });
     expect(row.recommendation).toBe('REDEPLOY');
 
